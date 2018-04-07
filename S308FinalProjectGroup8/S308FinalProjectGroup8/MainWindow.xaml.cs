@@ -1,7 +1,7 @@
 ﻿////Background picture from http://www.stagemilk.com/fitness-for-actors/
 ////User Image from https://qwilr.com/login/
 ////Face Image from http://domainsrus.ca/
-/// Lock Image from 
+/// Lock Image from https://cdn3.iconfinder.com/data/icons/black-easy/512/538522-lock_512x512.png
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -27,6 +27,11 @@ namespace S308FinalProjectGroup8
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void imgUserFace_MouseUp(object sender, MouseButtonEventArgs e)
+        {
+
         }
     }
 }
