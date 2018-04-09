@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Pricing_Management" Height="368.965" Width="680.46">
     <Grid>
-        <TextBox x:Name="txtMainMenuTitle" HorizontalAlignment="Left" Height="65" TextWrapping="Wrap" VerticalAlignment="Top" Width="769" Margin="-5,0,-89.6,0" SelectionOpacity="3" Opacity="0.75" FontFamily="Times New Roman" FontSize="20">
+        <TextBox x:Name="txtPricingManagementTitle" HorizontalAlignment="Left" Height="65" TextWrapping="Wrap" VerticalAlignment="Top" Width="769" Margin="-5,0,-89.6,0" SelectionOpacity="3" Opacity="0.75" FontFamily="Times New Roman" FontSize="20" IsTabStop="False">
             <TextBox.Background>
                 <RadialGradientBrush>
                     <GradientStop Color="Black" Offset="1"/>
@@ -15,6 +15,7 @@
                 </RadialGradientBrush>
             </TextBox.Background>
         </TextBox>
+        <Label x:Name="lblPricingManagementTitle" Content="Pricing Management" HorizontalAlignment="Left" Margin="219,10,0,0" VerticalAlignment="Top" Width="267" FontSize="30" FontWeight="Bold" FontFamily="Script MT Bold" IsHitTestVisible="False" Height="50" Foreground="#FF4C27C0" RenderTransformOrigin="1.003,0.473"/>
 
     </Grid>
 </Window>
