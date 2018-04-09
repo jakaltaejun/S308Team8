@@ -162,5 +162,29 @@
   <ItemGroup>
     <Resource Include="Images\home_icon.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\caculator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\For All Background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Keep Calm.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\MembershipSales_Background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Pricing_Background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\quote.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\reset.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\quote_1.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

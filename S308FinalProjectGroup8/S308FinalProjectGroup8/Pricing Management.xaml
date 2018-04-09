@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:S308FinalProjectGroup8"
         mc:Ignorable="d"
-        Title="Pricing_Management" Height="564.149" Width="680.46" Background="#FFF9F5F5">
+        Title="Pricing_Management" Height="539.323" Width="680.46" Background="#FFF9F5F5">
     <Grid>
         <TextBox x:Name="txtPricingManagementTitle" HorizontalAlignment="Left" Height="65" TextWrapping="Wrap" VerticalAlignment="Top" Width="769" Margin="-5,0,-89.6,0" SelectionOpacity="3" Opacity="0.75" FontFamily="Times New Roman" FontSize="20" IsTabStop="False">
             <TextBox.Background>
@@ -17,7 +17,7 @@
         </TextBox>
         <Label x:Name="lblPricingManagementTitle" Content="Pricing Management" HorizontalAlignment="Left" Margin="219,10,0,0" VerticalAlignment="Top" Width="267" FontSize="30" FontWeight="Bold" FontFamily="Script MT Bold" IsHitTestVisible="False" Height="50" Foreground="#FF4C27C0" RenderTransformOrigin="1.003,0.473"/>
         <Image x:Name="image1" HorizontalAlignment="Left" Height="469" Margin="-5,65,0,0" VerticalAlignment="Top" Width="679" Source="Images/For All Background.png" Stretch="Fill"/>
-        <Rectangle HorizontalAlignment="Left" Height="361" Margin="23,80,0,0" Stroke="Black" VerticalAlignment="Top" Width="641">
+        <Rectangle HorizontalAlignment="Left" Height="371" Margin="23,80,0,0" Stroke="Black" VerticalAlignment="Top" Width="641">
             <Rectangle.Fill>
                 <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
                     <GradientStop Color="Black"/>
@@ -25,10 +25,10 @@
                 </LinearGradientBrush>
             </Rectangle.Fill>
         </Rectangle>
-        <Image x:Name="imgClose" HorizontalAlignment="Left" Height="49" Margin="510,446,0,0" VerticalAlignment="Top" Width="51" Source="Images/close_icon.png" Stretch="Fill"/>
-        <Image x:Name="imgReturn" HorizontalAlignment="Left" Height="49" Margin="584,446,0,0" VerticalAlignment="Top" Width="41" Source="Images/home_icon.png"/>
-        <TextBox x:Name="txtPricingResult" HorizontalAlignment="Left" Height="308" Margin="424.188,105.809,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="233" UseLayoutRounding="False" Background="#FFF7F3F3"/>
-        <Rectangle x:Name="recMembershipType" Fill="#FFF6F1F1" HorizontalAlignment="Left" Height="156.253" Margin="43,105.6,0,0" Stroke="Black" VerticalAlignment="Top" Width="205.861" UseLayoutRounding="False"/>
+        <Image x:Name="imgClose" HorizontalAlignment="Left" Height="49" Margin="511,451,0,0" VerticalAlignment="Top" Width="51" Source="Images/close_icon.png" Stretch="Fill"/>
+        <Image x:Name="imgReturn" HorizontalAlignment="Left" Height="49" Margin="584,451,0,0" VerticalAlignment="Top" Width="41" Source="Images/home_icon.png"/>
+        <TextBox x:Name="txtPricingResult" HorizontalAlignment="Left" Height="254.492" Margin="424.188,105.809,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="233" UseLayoutRounding="False" Background="#FFF7F3F3" VerticalScrollBarVisibility="Visible"/>
+        <Rectangle x:Name="recMembershipType" Fill="#FFF6F1F1" HorizontalAlignment="Left" Height="254.701" Margin="43,105.6,0,0" Stroke="Black" VerticalAlignment="Top" Width="205.861" UseLayoutRounding="False"/>
         <Label x:Name="lblPricingResult" Content="Pricing Result" HorizontalAlignment="Left" Margin="501.386,88.235,0,0" VerticalAlignment="Top" Background="#FF696262" UseLayoutRounding="False" FontFamily="Times New Roman" FontSize="14" Foreground="#FFE8FA0B"/>
         <ListBox x:Name="lstMembershipType" HorizontalAlignment="Left" Height="127" Margin="65,118,0,0" VerticalAlignment="Top" Width="167">
             <RadioButton ClickMode="Press" Content="Individual 1 Month" FontWeight="Bold" FontFamily="Times New Roman"/>
@@ -38,17 +38,23 @@
             <RadioButton ClickMode="Press" Content="Family 1 Month" FontWeight="Bold" FontFamily="Times New Roman"/>
             <RadioButton ClickMode="Press" Content="Family 12 Month" FontWeight="Bold" FontFamily="Times New Roman"/>
         </ListBox>
-        <Label x:Name="lblMembershipType" Content="Memembership Type" HorizontalAlignment="Left" Margin="65.528,84.9,0,0" VerticalAlignment="Top" Background="#FF696262" UseLayoutRounding="False" FontFamily="Times New Roman" FontSize="14" Foreground="#FFE8FA0B"/>
+        <Label x:Name="lblMembershipType" Content="Memembership Type" HorizontalAlignment="Left" Margin="81.793,84.684,0,0" VerticalAlignment="Top" Background="#FF696262" UseLayoutRounding="False" FontFamily="Times New Roman" FontSize="14" Foreground="#FFE8FA0B"/>
         <Rectangle x:Name="recStartDate" Fill="#FFF6F1F1" HorizontalAlignment="Left" Height="46.628" Margin="264.99,102.258,0,0" Stroke="Black" VerticalAlignment="Top" Width="124.296" UseLayoutRounding="False"/>
         <Label x:Name="lblStartDate" Content="Start Date" HorizontalAlignment="Left" Margin="293.961,83.4,0,0" VerticalAlignment="Top" Background="#FF696262" UseLayoutRounding="False" FontFamily="Times New Roman" FontSize="14" Foreground="#FFE8FA0B"/>
         <DatePicker HorizontalAlignment="Left" Margin="278,114,0,0" VerticalAlignment="Top"/>
         <Rectangle x:Name="recEndDate" Fill="#FFF6F1F1" HorizontalAlignment="Left" Height="53.477" Margin="264.99,161.372,0,0" Stroke="Black" VerticalAlignment="Top" Width="124.296" UseLayoutRounding="False"/>
         <Label x:Name="lblEndDate" Content="End Date" HorizontalAlignment="Left" Margin="297.161,153.4,0,0" VerticalAlignment="Top" Background="#FF696262" UseLayoutRounding="False" FontFamily="Times New Roman" FontSize="14" Foreground="#FFE8FA0B"/>
         <DatePicker HorizontalAlignment="Left" Margin="278,184,0,0" VerticalAlignment="Top"/>
-        <Rectangle x:Name="recCalculateAndClear" Fill="#FFF6F1F1" HorizontalAlignment="Left" Height="56.045" Margin="136.202,370.57,0,0" Stroke="Black" VerticalAlignment="Top" Width="140.63" UseLayoutRounding="False"/>
-        <Label x:Name="lblCalculateAndClear" Content="Calculate &amp; Clear" HorizontalAlignment="Left" Margin="153.6,350.4,0,0" VerticalAlignment="Top" Background="#FF696262" UseLayoutRounding="False" FontFamily="Times New Roman" FontSize="14" Foreground="#FFE8FA0B"/>
-        <Image x:Name="imgCalculate" HorizontalAlignment="Left" Height="38" Margin="145,383,0,0" VerticalAlignment="Top" Width="50" Source="Images/caculator.png"/>
-        <Image x:Name="imgClear" HorizontalAlignment="Left" Height="31" Margin="219,383,0,0" VerticalAlignment="Top" Width="45" Source="Images/reset.png" RenderTransformOrigin="0.338,0.371"/>
+        <Rectangle x:Name="recCalculateAndClear" Fill="#FFF6F1F1" HorizontalAlignment="Left" Height="56.045" Margin="264.99,304.256,0,0" Stroke="Black" VerticalAlignment="Top" Width="124.296" UseLayoutRounding="False"/>
+        <Label x:Name="lblCalculateAndClear" Content="Calculate &amp; Clear" HorizontalAlignment="Left" Margin="264.99,282.4,0,0" VerticalAlignment="Top" Background="#FF696262" UseLayoutRounding="False" FontFamily="Times New Roman" FontSize="14" Foreground="#FFE8FA0B" Width="124.296" Padding="10,5,5,5"/>
+        <Image x:Name="imgCalculate" HorizontalAlignment="Left" Height="38" Margin="270,313,0,0" VerticalAlignment="Top" Width="50" Source="Images/caculator.png" Cursor="Hand" MouseUp="imgCalculate_MouseUp"/>
+        <Image x:Name="imgClear" HorizontalAlignment="Left" Height="31" Margin="335,313,0,0" VerticalAlignment="Top" Width="45" Source="Images/reset.png" RenderTransformOrigin="0.338,0.371" Cursor="Hand" MouseUp="imgClear_MouseUp"/>
+        <Label x:Name="lblAdditionalType" Content="Additional Type" HorizontalAlignment="Left" Margin="97.202,265.4,0,0" VerticalAlignment="Top" Background="#FF696262" UseLayoutRounding="False" FontFamily="Times New Roman" FontSize="14" Foreground="#FFE8FA0B"/>
+        <ListBox x:Name="lstAdditionalType" HorizontalAlignment="Left" Height="45" Margin="65,291,0,0" VerticalAlignment="Top" Width="167">
+            <ListBoxItem x:Name="lstItem1" Content="Personal Training Plan" FontWeight="Bold" FontFamily="Times New Roman" Cursor="None" Padding="20,1,4,1" AllowDrop="True"/>
+            <ListBoxItem x:Name="lstItem2" AllowDrop="True" Content="Locker Rental" FontWeight="Bold" FontFamily="Times New Roman" Padding="40,1,4,1"/>
+        </ListBox>
+        <Image x:Name="imgQuote" HorizontalAlignment="Left" Height="66" Margin="65,380,0,0" VerticalAlignment="Top" Width="570" Source="Images/Keep Calm.jpg" StretchDirection="DownOnly" Stretch="Fill"/>
 
     </Grid>
 </Window>
