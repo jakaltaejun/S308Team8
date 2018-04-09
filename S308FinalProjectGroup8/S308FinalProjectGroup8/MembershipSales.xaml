@@ -39,8 +39,8 @@
         <CheckBox x:Name="chkPersonalTrainingPlan" Content="Personal Training Plan" HorizontalAlignment="Left" Margin="302,266,0,0" VerticalAlignment="Top" Height="39" Width="226" FontFamily="Times New Roman" FontSize="22"/>
         <CheckBox x:Name="chkLockerRental" Content="Locker Rental" HorizontalAlignment="Left" Margin="302,314,0,0" VerticalAlignment="Top" Height="39" Width="226" FontFamily="Times New Roman" FontSize="22"/>
         <Button x:Name="btnQuote" Content="Quote" HorizontalAlignment="Left" Margin="418,377,0,0" VerticalAlignment="Top" Width="92" Background="#FFA0BAF9" FontFamily="Times New Roman" FontSize="22" Height="36"/>
-        <Image x:Name="imgHome" HorizontalAlignment="Left" Height="66" Margin="727,501,0,0" VerticalAlignment="Top" Width="66" Source="Images/home_icon.png" Cursor="Hand" MouseUp="imgHome_MouseUp"/>
-        <Image x:Name="imgExit" HorizontalAlignment="Left" Height="66" Margin="814,501,0,0" VerticalAlignment="Top" Width="66" Source="Images/Exit.png"/>
+        <Image x:Name="imgHome" HorizontalAlignment="Left" Height="66" Margin="727,499,0,0" VerticalAlignment="Top" Width="66" Source="Images/home_icon.png" Cursor="Hand" MouseUp="imgHome_MouseUp"/>
+        <Image x:Name="imgExit" HorizontalAlignment="Left" Height="66" Margin="814,501,0,0" VerticalAlignment="Top" Width="66" Source="Images/close_icon.png" Cursor="Hand" MouseUp="imgExit_MouseUp"/>
 
     </Grid>
 </Window>

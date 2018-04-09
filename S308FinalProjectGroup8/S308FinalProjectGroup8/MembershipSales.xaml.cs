@@ -30,5 +30,10 @@ namespace S308FinalProjectGroup8
         {
 
         }
+
+        private void imgExit_MouseUp(object sender, MouseButtonEventArgs e)
+        {
+
+        }
     }
 }
