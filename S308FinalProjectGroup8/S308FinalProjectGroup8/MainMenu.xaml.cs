@@ -29,5 +29,10 @@ namespace S308FinalProjectGroup8
         {
             InitializeComponent();
         }
+
+        private void imgSales_MouseUp(object sender, MouseButtonEventArgs e)
+        {
+
+        }
     }
 }
