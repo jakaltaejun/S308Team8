@@ -1,4 +1,4 @@
-﻿////Taejun Lee, Jaehyun Lim, Jikao li
+﻿////Name: Taejun Lee, Jaehyun Lim, Jiakuo Li
 ///Imgaes for dumbbell: https://www.iconfinder.com/icons/282211/dumbbell_exercise_fitness_gym_sport_sport_club_training_icon#size=128
 ///Images for background: https://www.mensfitness.com/training/workout-routines/best-workout-ever-according-science
 ///Images for sales: https://www.iconfinder.com/icons/755051/business_earning_income_increase_office_sales_icon
