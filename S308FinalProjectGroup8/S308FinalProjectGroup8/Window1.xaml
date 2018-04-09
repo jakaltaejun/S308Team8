@@ -7,14 +7,20 @@
         mc:Ignorable="d"
         Title="Main Menu" Height="360.339" Width="770.115" WindowStartupLocation="CenterScreen">
     <Grid Background="#FFFAF7F7" Margin="0,0,0,6.4">
-        <Image x:Name="imgMainMenuBackground" HorizontalAlignment="Left" Height="447" Margin="378,0,0,-114.2" VerticalAlignment="Top" Width="386" OpacityMask="Black" Source="Images/MainMenu_Background.jpg"/>
-        <TextBox x:Name="txtMainMenuTitle" HorizontalAlignment="Left" Height="65" TextWrapping="Wrap" VerticalAlignment="Top" Width="383" Margin="-5,0,0,0" SelectionOpacity="3" Opacity="0.75" Background="#FFF7D349" FontFamily="Times New Roman" FontSize="20"/>
+        <Image x:Name="imgMainMenuBackground" HorizontalAlignment="Left" Height="273" Margin="378,65,0,-14" VerticalAlignment="Top" Width="386" OpacityMask="Black" Source="Images/MainMenu_Background.jpg" Stretch="Fill"/>
+        <TextBox x:Name="txtMainMenuTitle" HorizontalAlignment="Left" Height="65" TextWrapping="Wrap" VerticalAlignment="Top" Width="769" Margin="-5,0,0,0" SelectionOpacity="3" Opacity="0.75" FontFamily="Times New Roman" FontSize="20">
+            <TextBox.Background>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FF8B8B5B" Offset="0.96"/>
+                    <GradientStop Color="#FFF7F7BD" Offset="0.709"/>
+                </RadialGradientBrush>
+            </TextBox.Background>
+        </TextBox>
         <TextBox x:Name="txtMembershipSales" HorizontalAlignment="Left" Height="70" TextWrapping="Wrap" VerticalAlignment="Top" Width="383" Margin="-5,65,0,0" Background="#FFF19393"/>
         <TextBox x:Name="txtPricingManagement" HorizontalAlignment="Left" Height="65" TextWrapping="Wrap" VerticalAlignment="Top" Width="383" Margin="-5,135,0,0" Background="#FF9ABEFA"/>
         <TextBox x:Name="txtMembershipInfo" HorizontalAlignment="Left" Height="65" TextWrapping="Wrap" VerticalAlignment="Top" Width="383" Margin="-5,200,0,0" Background="#FF76DD95"/>
         <TextBox x:Name="txtExit" HorizontalAlignment="Left" Height="73" TextWrapping="Wrap" VerticalAlignment="Top" Width="383" Margin="-5,265,0,-14" Background="#FF727974"/>
-        <Label x:Name="lblMainMenuTitle" Content="Main Menu" HorizontalAlignment="Left" Margin="135,20,0,0" VerticalAlignment="Top" Width="124" FontSize="20" FontWeight="Bold" FontFamily="Script MT Bold" IsHitTestVisible="False" Height="30" Foreground="#FF4C27C0"/>
-        <Image x:Name="imgDumbbell" HorizontalAlignment="Left" Height="50" Margin="63,10,0,0" VerticalAlignment="Top" Width="50" Source="Images/dumbbell.png"/>
+        <Label x:Name="lblMainMenuTitle" Content="Welcome! Fitness Club Manager" HorizontalAlignment="Left" Margin="166,10,0,0" VerticalAlignment="Top" Width="427" FontSize="30" FontWeight="Bold" FontFamily="Script MT Bold" IsHitTestVisible="False" Height="40" Foreground="#FF4C27C0"/>
         <Label x:Name="lblMembershipSales" Content="Membership Sales" HorizontalAlignment="Left" Margin="135,89,0,0" VerticalAlignment="Top" Width="163" FontSize="20" FontWeight="Bold" FontFamily="Script MT Bold" IsHitTestVisible="False" Height="30" Foreground="#FF1369D6" Background="#00000000"/>
         <Image x:Name="imgSales" HorizontalAlignment="Left" Height="51" Margin="63,79,0,0" VerticalAlignment="Top" Width="50" Source="Images/sales.png"/>
         <Image x:Name="imgPricing" HorizontalAlignment="Left" Height="51" Margin="63,140,0,0" VerticalAlignment="Top" Width="50" Source="Images/pricing.png"/>
