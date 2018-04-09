@@ -9,13 +9,13 @@
     <Grid>
         <Image x:Name="imgBackground" HorizontalAlignment="Left" Height="514" VerticalAlignment="Top" Width="794" Margin="0,0,-0.4,-0.4" Source="Images/Background.jpg" RenderTransformOrigin="0.517,0.474" Stretch="Fill"/>
         <Rectangle x:Name="recLogin" Fill="#FFFAFFF6" HorizontalAlignment="Left" Height="478" Margin="26,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="316" Opacity="0.8"/>
+        <TextBox x:Name="txtTitle" HorizontalAlignment="Left" Height="117" Margin="85,33,0,0" TextWrapping="Wrap" Text="Fitness   Membership" VerticalAlignment="Top" Width="201" Background="Transparent" BorderBrush="Transparent" FontFamily="Script MT Bold" FontSize="35" ScrollViewer.CanContentScroll="True" TextAlignment="Center" Foreground="#FF6D6D6D" IsTabStop="False"/>
         <Image x:Name="imgUserFace" HorizontalAlignment="Left" Height="86" Margin="138,150,0,0" VerticalAlignment="Top" Width="96" Source="Images/Face.png" Cursor="Hand"/>
         <TextBox x:Name="txtUserID" HorizontalAlignment="Left" Height="32" Margin="104,284,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="169" Background="#FFF1EEEE" Opacity="0.9" IsHitTestVisible="True" FontFamily="Calibri"/>
         <Button x:Name="btxLogin" HorizontalAlignment="Left" Margin="138,410,0,0" VerticalAlignment="Top" Width="96" Height="29" IsCancel="True" Background="#FF4C93DF" Opacity="0.9" Content="LOGIN" FontFamily="Times New Roman" FontSize="14"/>
         <Image x:Name="image" HorizontalAlignment="Left" Height="27" Margin="71,289,0,0" VerticalAlignment="Top" Width="20" Source="Images/User.png" RenderTransformOrigin="-0.013,0.459"/>
         <PasswordBox x:Name="pwdPassword" HorizontalAlignment="Left" Margin="104,334,0,0" VerticalAlignment="Top" Width="169" Height="32" Background="#FFF1EEEE"/>
         <Image x:Name="image_Copy" HorizontalAlignment="Left" Height="27" Margin="71,339,0,0" VerticalAlignment="Top" Width="20" Source="Images/Locker.png" RenderTransformOrigin="-0.013,0.459"/>
-        <Label x:Name="lblTitle" Content="     Fitness&#xD;&#xA;Membership" HorizontalAlignment="Left" Margin="89,42,0,0" VerticalAlignment="Top" Height="102" Width="210" FontFamily="Script MT Bold" FontSize="36"/>
 
     </Grid>
 </Window>
