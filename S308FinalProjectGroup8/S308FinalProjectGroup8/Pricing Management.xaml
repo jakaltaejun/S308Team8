@@ -41,10 +41,10 @@
         <Label x:Name="lblMembershipType" Content="Memembership Type" HorizontalAlignment="Left" Margin="81.793,84.684,0,0" VerticalAlignment="Top" Background="#FF696262" UseLayoutRounding="False" FontFamily="Times New Roman" FontSize="14" Foreground="#FFE8FA0B"/>
         <Rectangle x:Name="recStartDate" Fill="#FFF6F1F1" HorizontalAlignment="Left" Height="46.628" Margin="264.99,102.258,0,0" Stroke="Black" VerticalAlignment="Top" Width="124.296" UseLayoutRounding="False"/>
         <Label x:Name="lblStartDate" Content="Start Date" HorizontalAlignment="Left" Margin="293.961,83.4,0,0" VerticalAlignment="Top" Background="#FF696262" UseLayoutRounding="False" FontFamily="Times New Roman" FontSize="14" Foreground="#FFE8FA0B"/>
-        <DatePicker HorizontalAlignment="Left" Margin="278,114,0,0" VerticalAlignment="Top"/>
+        <DatePicker x:Name="dtpStartDate" HorizontalAlignment="Left" Margin="278,114,0,0" VerticalAlignment="Top"/>
         <Rectangle x:Name="recEndDate" Fill="#FFF6F1F1" HorizontalAlignment="Left" Height="53.477" Margin="264.99,161.372,0,0" Stroke="Black" VerticalAlignment="Top" Width="124.296" UseLayoutRounding="False"/>
         <Label x:Name="lblEndDate" Content="End Date" HorizontalAlignment="Left" Margin="297.161,153.4,0,0" VerticalAlignment="Top" Background="#FF696262" UseLayoutRounding="False" FontFamily="Times New Roman" FontSize="14" Foreground="#FFE8FA0B"/>
-        <DatePicker HorizontalAlignment="Left" Margin="278,184,0,0" VerticalAlignment="Top"/>
+        <DatePicker x:Name="dtpEndDate" HorizontalAlignment="Left" Margin="278,184,0,0" VerticalAlignment="Top"/>
         <Rectangle x:Name="recCalculateAndClear" Fill="#FFF6F1F1" HorizontalAlignment="Left" Height="56.045" Margin="264.99,304.256,0,0" Stroke="Black" VerticalAlignment="Top" Width="124.296" UseLayoutRounding="False"/>
         <Label x:Name="lblCalculateAndClear" Content="Calculate &amp; Clear" HorizontalAlignment="Left" Margin="264.99,282.4,0,0" VerticalAlignment="Top" Background="#FF696262" UseLayoutRounding="False" FontFamily="Times New Roman" FontSize="14" Foreground="#FFE8FA0B" Width="124.296" Padding="10,5,5,5"/>
         <Image x:Name="imgCalculate" HorizontalAlignment="Left" Height="38" Margin="270,313,0,0" VerticalAlignment="Top" Width="50" Source="Images/caculator.png" Cursor="Hand" MouseUp="imgCalculate_MouseUp"/>
