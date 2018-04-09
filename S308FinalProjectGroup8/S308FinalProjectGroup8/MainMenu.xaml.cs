@@ -54,6 +54,7 @@ namespace S308FinalProjectGroup8
         {
             Pricing_Management PricingManagement = new Pricing_Management();
             PricingManagement.Show();
+            
         }
 
         private void imgInfo_MouseUp(object sender, MouseButtonEventArgs e)

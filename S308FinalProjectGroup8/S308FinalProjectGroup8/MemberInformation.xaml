@@ -5,14 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:S308FinalProjectGroup8"
         mc:Ignorable="d"
-        Title="MemberInformation" Height="373.609" Width="728.77">
+        Title="MemberInformation" Height="425.609" Width="728.77">
     <Window.Background>
         <ImageBrush/>
     </Window.Background>
     <Grid>
-        <Image x:Name="image" HorizontalAlignment="Left" Height="344" VerticalAlignment="Top" Width="722" Source="Images/For All Background.png" Stretch="Fill"/>
-        <Image x:Name="image1" HorizontalAlignment="Left" Height="265" Margin="10,18,0,0" VerticalAlignment="Top" Width="702" Source="Images/court.jpg" Stretch="Fill"/>
-        <Rectangle HorizontalAlignment="Left" Height="210" Margin="28,37,0,0" Stroke="Black" VerticalAlignment="Top" Width="213" Opacity="0.7">
+        <Image x:Name="imgBackground" HorizontalAlignment="Left" Height="396" VerticalAlignment="Top" Width="722" Source="Images/For All Background.png" Stretch="Fill" RenderTransformOrigin="0.515,0.166"/>
+        <Image x:Name="imgBackground2" HorizontalAlignment="Left" Height="265" Margin="10,75,0,0" VerticalAlignment="Top" Width="702" Source="Images/wallpaper.jpg" Stretch="Fill"/>
+        <Rectangle x:Name="txtSearch" HorizontalAlignment="Left" Height="210" Margin="29,119,0,0" Stroke="Black" VerticalAlignment="Top" Width="213" Opacity="0.7">
             <Rectangle.Fill>
                 <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
                     <GradientStop Color="#FFF1DDDB" Offset="1"/>
@@ -20,10 +20,28 @@
                 </LinearGradientBrush>
             </Rectangle.Fill>
         </Rectangle>
-        <TextBox x:Name="txtReport" HorizontalAlignment="Left" Height="210" Margin="272,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="440" Opacity="0.7"/>
-        <Image x:Name="imgClose" HorizontalAlignment="Left" Height="43" Margin="558,291,0,0" VerticalAlignment="Top" Width="45" Source="Images/close_icon.png"/>
-        <Image x:Name="imgHome" HorizontalAlignment="Left" Height="43" Margin="620,291,0,0" VerticalAlignment="Top" Width="38" Source="Images/home_icon.png"/>
-        <Label x:Name="lblSearch" Content="Search Members" HorizontalAlignment="Left" Margin="85,21,0,0" VerticalAlignment="Top" Foreground="#FF516AD4" Background="#FFF0E6E6" FontFamily="Times New Roman" FontWeight="Bold"/>
+        <TextBox x:Name="txtReport" HorizontalAlignment="Left" Height="210" Margin="272,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="440" Opacity="0.8" Background="White"/>
+        <Image x:Name="imgClose" HorizontalAlignment="Left" Height="43" Margin="560,345,0,0" VerticalAlignment="Top" Width="45" Source="Images/close_icon.png"/>
+        <Image x:Name="imgHome" HorizontalAlignment="Left" Height="43" Margin="620,345,0,0" VerticalAlignment="Top" Width="38" Source="Images/home_icon.png"/>
+        <Label x:Name="lblSearch" Content="Search Members" HorizontalAlignment="Left" Margin="89,103,0,0" VerticalAlignment="Top" Foreground="#FF516AD4" Background="#FFF0E6E6" FontFamily="Times New Roman" FontWeight="Bold"/>
+        <TextBox x:Name="txtMembershipInformation" HorizontalAlignment="Left" Height="65" TextWrapping="Wrap" VerticalAlignment="Top" Width="722" TextAlignment="Center" Margin="0">
+            <TextBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FFE9F098" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBox.Background>
+        </TextBox>
+        <Label x:Name="lblMembershipInfoTitle" Content="Membership Information" HorizontalAlignment="Left" Margin="201,10,0,0" VerticalAlignment="Top" Width="330" Foreground="#FF4C27C0" FontFamily="Script MT Bold" FontSize="30" FontWeight="Bold"/>
+        <Label x:Name="lblReport" Content="Membership Report" HorizontalAlignment="Left" Margin="435,103,0,0" VerticalAlignment="Top" Foreground="#FF516AD4" Background="#FFF0E6E6" FontFamily="Times New Roman" FontWeight="Bold"/>
+        <Image x:Name="imgName" HorizontalAlignment="Left" Height="26" Margin="44,150,0,0" VerticalAlignment="Top" Width="40" Source="Images/name2.png"/>
+        <TextBox x:Name="txtName" HorizontalAlignment="Left" Height="26" Margin="89,150,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#FFEBE8E8" FontFamily="Courier New"/>
+        <Image x:Name="imgEmail" HorizontalAlignment="Left" Height="26" Margin="44,197,0,0" VerticalAlignment="Top" Width="40" Source="Images/email2.png"/>
+        <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Height="26" Margin="89,197,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#FFEBE8E8" FontFamily="Courier New"/>
+        <TextBox x:Name="txtPhone" HorizontalAlignment="Left" Height="26" Margin="89,239,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#FFEBE8E8" FontFamily="Courier New"/>
+        <Image x:Name="imgPhone" HorizontalAlignment="Left" Height="26" Margin="44,239,0,0" VerticalAlignment="Top" Width="40" Source="Images/phone.png"/>
+        <Image x:Name="imgSearch" HorizontalAlignment="Left" Height="35" Margin="107,285,0,0" VerticalAlignment="Top" Width="69" Source="Images/search icon.png"/>
+        <Image x:Name="imgReset" HorizontalAlignment="Left" Height="35" Margin="165,285,0,0" VerticalAlignment="Top" Width="69" Source="Images/reset.png"/>
 
     </Grid>
 </Window>

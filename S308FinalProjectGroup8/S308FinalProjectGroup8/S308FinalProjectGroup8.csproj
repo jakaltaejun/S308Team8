@@ -196,5 +196,26 @@
   <ItemGroup>
     <Resource Include="Images\court.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\email.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\name.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\phone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\name2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\email2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\search icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\wallpaper.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
