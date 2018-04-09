@@ -1,4 +1,6 @@
-﻿using System;
+﻿//Background picture from: https://www.white-ibiza.com/winter/wellness/cotton-fitness-club
+//
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;

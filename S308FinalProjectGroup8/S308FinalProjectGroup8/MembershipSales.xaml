@@ -5,9 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:S308FinalProjectGroup8"
         mc:Ignorable="d"
-        Title="Membership Sales" Height="517.5" Width="800">
+        Title="Membership Sales" Height="638" Width="957">
     <Grid>
-        <TextBox x:Name="txtMembershipSalesTitle" HorizontalAlignment="Left" Height="65" TextWrapping="Wrap" VerticalAlignment="Top" Width="800" Margin="-5,0,0,0" SelectionOpacity="3" Opacity="0.75" FontFamily="Times New Roman" FontSize="20" IsReadOnly="True">
+        <TextBox x:Name="txtMembershipSalesTitle" HorizontalAlignment="Left" Height="65" TextWrapping="Wrap" VerticalAlignment="Top" Width="957" Margin="-5,0,0,0" SelectionOpacity="3" Opacity="0.75" FontFamily="Times New Roman" FontSize="20" IsReadOnly="True">
             <TextBox.Background>
                 <RadialGradientBrush>
                     <GradientStop Color="Black" Offset="1"/>
@@ -15,7 +15,30 @@
                 </RadialGradientBrush>
             </TextBox.Background>
         </TextBox>
-        <Label x:Name="lblMembershipSalesTitle" Content="Membership Sales" HorizontalAlignment="Left" Margin="278,10,0,0" VerticalAlignment="Top" Width="240" FontSize="30" FontWeight="Bold" FontFamily="Script MT Bold" IsHitTestVisible="False" Height="50" Foreground="#FF4C27C0" RenderTransformOrigin="1.003,0.473"/>
+        <Label x:Name="lblMembershipSalesTitle" Content="Membership Sales" HorizontalAlignment="Left" Margin="357,10,0,0" VerticalAlignment="Top" Width="240" FontSize="30" FontWeight="Bold" FontFamily="Script MT Bold" IsHitTestVisible="False" Height="50" Foreground="#FF4C27C0" RenderTransformOrigin="1.003,0.473"/>
+        <Image x:Name="imgBackground" HorizontalAlignment="Left" Height="638" Margin="0,65,0,0" VerticalAlignment="Top" Width="957" Source="Images/MembershipSales_Background.jpg"/>
+        <Rectangle x:Name="recMembershipSales" Fill="#FFFAFFF6" HorizontalAlignment="Left" Height="468" Margin="54,99,0,0" Stroke="Black" VerticalAlignment="Top" Width="836" Opacity="0.8"/>
+        <Label x:Name="lblMembershipType_Sales" Content="Membership Type:" HorizontalAlignment="Left" Margin="69,126,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="22"/>
+        <ComboBox x:Name="comMembershipType_Sales" HorizontalAlignment="Left" Margin="302,130,0,0" VerticalAlignment="Top" Width="226" Height="33" FontFamily="Times New Roman" FontSize="22">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                    <GradientStop Color="#FFBCDBF9" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+            <ComboBoxItem Content="Individual 1 Month" HorizontalAlignment="Left" Width="217"/>
+            <ComboBoxItem Content="Individual 12 Month" HorizontalAlignment="Left" Width="217"/>
+            <ComboBoxItem Content="Two Person 1 Month" HorizontalAlignment="Left" Width="217"/>
+            <ComboBoxItem Content="Two Person 12 Month" HorizontalAlignment="Left" Width="217"/>
+            <ComboBoxItem Content="Family 1 Month" HorizontalAlignment="Left" Width="217"/>
+            <ComboBoxItem Content="Family 12 Month" HorizontalAlignment="Left" Width="217"/>
+        </ComboBox>
+        <Label x:Name="lblMembershipStartDate_Sales" Content="Membership Start Date:" HorizontalAlignment="Left" Margin="69,190,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="22"/>
+        <DatePicker x:Name="dateMembershipStartDate_Sales" HorizontalAlignment="Left" Margin="302,193,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="22" Width="226" Background="#FFCCE7F9"/>
+        <Label x:Name="lblAdditionalFeatures_Sales" Content="Additional Features:" HorizontalAlignment="Left" Margin="69,252,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="22"/>
+        <CheckBox x:Name="chkPersonalTrainingPlan" Content="Personal Training Plan" HorizontalAlignment="Left" Margin="302,266,0,0" VerticalAlignment="Top" Height="39" Width="226" FontFamily="Times New Roman" FontSize="22"/>
+        <CheckBox x:Name="chkLockerRental" Content="Locker Rental" HorizontalAlignment="Left" Margin="302,314,0,0" VerticalAlignment="Top" Height="39" Width="226" FontFamily="Times New Roman" FontSize="22"/>
+        <Button x:Name="btnQuote" Content="Quote" HorizontalAlignment="Left" Margin="418,377,0,0" VerticalAlignment="Top" Width="92" Background="#FFA0BAF9" FontFamily="Times New Roman" FontSize="22" Height="36"/>
 
     </Grid>
 </Window>
