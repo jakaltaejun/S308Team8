@@ -20,9 +20,9 @@
                 </LinearGradientBrush>
             </Rectangle.Fill>
         </Rectangle>
-        <TextBox x:Name="txtReport" HorizontalAlignment="Left" Height="210" Margin="272,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="440" Opacity="0.8" Background="White"/>
-        <Image x:Name="imgClose" HorizontalAlignment="Left" Height="43" Margin="560,345,0,0" VerticalAlignment="Top" Width="45" Source="Images/close_icon.png"/>
-        <Image x:Name="imgHome" HorizontalAlignment="Left" Height="43" Margin="620,345,0,0" VerticalAlignment="Top" Width="38" Source="Images/home_icon.png"/>
+        <TextBox x:Name="txtReport" HorizontalAlignment="Left" Height="210" Margin="272,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="440" Opacity="0.8" Background="White" IsTabStop="False"/>
+        <Image x:Name="imgClose" HorizontalAlignment="Left" Height="43" Margin="560,345,0,0" VerticalAlignment="Top" Width="45" Source="Images/close_icon.png" MouseUp="imgClose_MouseUp" Cursor="Hand"/>
+        <Image x:Name="imgHome" HorizontalAlignment="Left" Height="43" Margin="620,345,0,0" VerticalAlignment="Top" Width="38" Source="Images/home_icon.png" MouseUp="imgHome_MouseUp" Cursor="Hand"/>
         <Label x:Name="lblSearch" Content="Search Members" HorizontalAlignment="Left" Margin="89,103,0,0" VerticalAlignment="Top" Foreground="#FF516AD4" Background="#FFF0E6E6" FontFamily="Times New Roman" FontWeight="Bold"/>
         <TextBox x:Name="txtMembershipInformation" HorizontalAlignment="Left" Height="65" TextWrapping="Wrap" VerticalAlignment="Top" Width="722" TextAlignment="Center" Margin="0">
             <TextBox.Background>
@@ -35,13 +35,13 @@
         <Label x:Name="lblMembershipInfoTitle" Content="Membership Information" HorizontalAlignment="Left" Margin="201,10,0,0" VerticalAlignment="Top" Width="330" Foreground="#FF4C27C0" FontFamily="Script MT Bold" FontSize="30" FontWeight="Bold"/>
         <Label x:Name="lblReport" Content="Membership Report" HorizontalAlignment="Left" Margin="435,103,0,0" VerticalAlignment="Top" Foreground="#FF516AD4" Background="#FFF0E6E6" FontFamily="Times New Roman" FontWeight="Bold"/>
         <Image x:Name="imgName" HorizontalAlignment="Left" Height="26" Margin="44,150,0,0" VerticalAlignment="Top" Width="40" Source="Images/name2.png"/>
-        <TextBox x:Name="txtName" HorizontalAlignment="Left" Height="26" Margin="89,150,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#FFEBE8E8" FontFamily="Courier New"/>
+        <TextBox x:Name="txtName" HorizontalAlignment="Left" Height="26" Margin="89,150,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#FFEBE8E8" FontFamily="Courier New" TabIndex="0"/>
         <Image x:Name="imgEmail" HorizontalAlignment="Left" Height="26" Margin="44,197,0,0" VerticalAlignment="Top" Width="40" Source="Images/email2.png"/>
-        <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Height="26" Margin="89,197,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#FFEBE8E8" FontFamily="Courier New"/>
-        <TextBox x:Name="txtPhone" HorizontalAlignment="Left" Height="26" Margin="89,239,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#FFEBE8E8" FontFamily="Courier New"/>
+        <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Height="26" Margin="89,197,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#FFEBE8E8" FontFamily="Courier New" TabIndex="1"/>
+        <TextBox x:Name="txtPhone" HorizontalAlignment="Left" Height="26" Margin="89,239,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#FFEBE8E8" FontFamily="Courier New" TabIndex="2"/>
         <Image x:Name="imgPhone" HorizontalAlignment="Left" Height="26" Margin="44,239,0,0" VerticalAlignment="Top" Width="40" Source="Images/phone.png"/>
-        <Image x:Name="imgSearch" HorizontalAlignment="Left" Height="35" Margin="107,285,0,0" VerticalAlignment="Top" Width="69" Source="Images/search icon.png"/>
-        <Image x:Name="imgReset" HorizontalAlignment="Left" Height="35" Margin="165,285,0,0" VerticalAlignment="Top" Width="69" Source="Images/reset.png"/>
+        <Image x:Name="imgSearch" HorizontalAlignment="Left" Height="35" Margin="107,285,0,0" VerticalAlignment="Top" Width="69" Source="Images/search icon.png" Cursor="Hand" MouseUp="imgSearch_MouseUp"/>
+        <Image x:Name="imgReset" HorizontalAlignment="Left" Height="35" Margin="165,285,0,0" VerticalAlignment="Top" Width="69" Source="Images/reset.png" Cursor="Hand" MouseUp="imgReset_MouseUp"/>
 
     </Grid>
 </Window>

@@ -30,25 +30,17 @@ namespace S308FinalProjectGroup8
             InitializeComponent();
         }
 
-        private void imgSales_MouseUp(object sender, MouseButtonEventArgs e)
-        {
+        
 
-        }
-
-        private void lblMembershipSales_MouseUp(object sender, MouseButtonEventArgs e)
-        {
-
-        }
+        
 
         private void lblMembershipSales_MouseUp_1(object sender, MouseButtonEventArgs e)
         {
-
+            MembershipSales Sales = new S308FinalProjectGroup8.MembershipSales();
+            Sales.Show();
         }
 
-        private void imgPricing_MouseUp(object sender, MouseButtonEventArgs e)
-        {
-
-        }
+        
 
         private void lblPricingManagement_MouseUp(object sender, MouseButtonEventArgs e)
         {
@@ -64,13 +56,11 @@ namespace S308FinalProjectGroup8
 
         private void lblMembershipInfo_MouseUp(object sender, MouseButtonEventArgs e)
         {
-
+            MemberInformation MembershipInfo = new S308FinalProjectGroup8.MemberInformation();
+            MembershipInfo.Show();
         }
 
-        private void imgExit_MouseUp(object sender, MouseButtonEventArgs e)
-        {
-
-        }
+        
 
         private void lblExit_MouseUp(object sender, MouseButtonEventArgs e)
         {
