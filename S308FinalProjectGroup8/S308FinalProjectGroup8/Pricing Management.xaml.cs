@@ -1,4 +1,9 @@
-﻿using System;
+﻿//Images for Background https://www.videoblocks.com/video/winter-night-sky-christmas-snowfall---loopable-background-kdbl7qy
+//Images for Calculate: http://www.softicons.com/toolbar-icons/flatastic-icons-part-1-by-custom-icon-design/calculator-icon
+//Images for Clear 
+//Images for return
+//Images for close
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:S308FinalProjectGroup8"
         mc:Ignorable="d"
-        Title="Pricing_Management" Height="441.731" Width="680.46" Background="#FFF9F5F5">
+        Title="Pricing_Management" Height="564.149" Width="680.46" Background="#FFF9F5F5">
     <Grid>
         <TextBox x:Name="txtPricingManagementTitle" HorizontalAlignment="Left" Height="65" TextWrapping="Wrap" VerticalAlignment="Top" Width="769" Margin="-5,0,-89.6,0" SelectionOpacity="3" Opacity="0.75" FontFamily="Times New Roman" FontSize="20" IsTabStop="False">
             <TextBox.Background>
@@ -16,8 +16,8 @@
             </TextBox.Background>
         </TextBox>
         <Label x:Name="lblPricingManagementTitle" Content="Pricing Management" HorizontalAlignment="Left" Margin="219,10,0,0" VerticalAlignment="Top" Width="267" FontSize="30" FontWeight="Bold" FontFamily="Script MT Bold" IsHitTestVisible="False" Height="50" Foreground="#FF4C27C0" RenderTransformOrigin="1.003,0.473"/>
-        <Image x:Name="image1" HorizontalAlignment="Left" Height="347" Margin="-5,65,0,0" VerticalAlignment="Top" Width="679" Source="Images/For All Background.png" Stretch="Fill"/>
-        <Rectangle HorizontalAlignment="Left" Height="268" Margin="30,80,0,0" Stroke="Black" VerticalAlignment="Top" Width="614">
+        <Image x:Name="image1" HorizontalAlignment="Left" Height="469" Margin="-5,65,0,0" VerticalAlignment="Top" Width="679" Source="Images/For All Background.png" Stretch="Fill"/>
+        <Rectangle HorizontalAlignment="Left" Height="361" Margin="23,80,0,0" Stroke="Black" VerticalAlignment="Top" Width="641">
             <Rectangle.Fill>
                 <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
                     <GradientStop Color="Black"/>
@@ -25,19 +25,30 @@
                 </LinearGradientBrush>
             </Rectangle.Fill>
         </Rectangle>
-        <Image x:Name="imgClose" HorizontalAlignment="Left" Height="49" Margin="509,353,0,0" VerticalAlignment="Top" Width="51" Source="Images/close_icon.png" Stretch="Fill"/>
-        <Image x:Name="imgReturn" HorizontalAlignment="Left" Height="49" Margin="593,353,0,0" VerticalAlignment="Top" Width="41" Source="Images/home_icon.png"/>
-        <TextBox x:Name="txtPricingResult" HorizontalAlignment="Left" Height="231" Margin="391.812,100.591,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="233" UseLayoutRounding="False" Background="#FFF7F3F3"/>
-        <Rectangle Fill="#FFF6F1F1" HorizontalAlignment="Left" Height="103.129" Margin="42.727,100.591,0,0" Stroke="Black" VerticalAlignment="Top" Width="151.69" UseLayoutRounding="False"/>
-        <Label x:Name="label" Content="Pricing Result" HorizontalAlignment="Left" Margin="460.295,84.9,0,0" VerticalAlignment="Top" Background="#FF696262" UseLayoutRounding="False" FontFamily="Times New Roman" FontSize="14" Foreground="#FFE8FA0B"/>
-        <Image x:Name="image" HorizontalAlignment="Left" Height="46" Margin="54,286,0,0" VerticalAlignment="Top" Width="51" Source="Images/caculator.png"/>
-        <Image x:Name="image_Copy" HorizontalAlignment="Left" Height="46" Margin="133,286,0,0" VerticalAlignment="Top" Width="51" Source="Images/clear.png"/>
-        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="65" Margin="54,118,0,0" VerticalAlignment="Top" Width="130">
-            <RadioButton ClickMode="Press" Content="Individual" FontWeight="Bold" FontFamily="Times New Roman"/>
-            <RadioButton ClickMode="Press" Content="Two Person" FontWeight="Bold" FontFamily="Times New Roman"/>
-            <RadioButton ClickMode="Press" Content="Family" FontWeight="Bold" FontFamily="Times New Roman"/>
+        <Image x:Name="imgClose" HorizontalAlignment="Left" Height="49" Margin="510,446,0,0" VerticalAlignment="Top" Width="51" Source="Images/close_icon.png" Stretch="Fill"/>
+        <Image x:Name="imgReturn" HorizontalAlignment="Left" Height="49" Margin="584,446,0,0" VerticalAlignment="Top" Width="41" Source="Images/home_icon.png"/>
+        <TextBox x:Name="txtPricingResult" HorizontalAlignment="Left" Height="308" Margin="424.188,105.809,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="233" UseLayoutRounding="False" Background="#FFF7F3F3"/>
+        <Rectangle x:Name="recMembershipType" Fill="#FFF6F1F1" HorizontalAlignment="Left" Height="156.253" Margin="43,105.6,0,0" Stroke="Black" VerticalAlignment="Top" Width="205.861" UseLayoutRounding="False"/>
+        <Label x:Name="lblPricingResult" Content="Pricing Result" HorizontalAlignment="Left" Margin="501.386,88.235,0,0" VerticalAlignment="Top" Background="#FF696262" UseLayoutRounding="False" FontFamily="Times New Roman" FontSize="14" Foreground="#FFE8FA0B"/>
+        <ListBox x:Name="lstMembershipType" HorizontalAlignment="Left" Height="127" Margin="65,118,0,0" VerticalAlignment="Top" Width="167">
+            <RadioButton ClickMode="Press" Content="Individual 1 Month" FontWeight="Bold" FontFamily="Times New Roman"/>
+            <RadioButton ClickMode="Press" Content="Individual 12 month" FontWeight="Bold" FontFamily="Times New Roman"/>
+            <RadioButton ClickMode="Press" Content="Two Person 1 Month" FontWeight="Bold" FontFamily="Times New Roman"/>
+            <RadioButton ClickMode="Press" Content="Two Person 12 Month" FontWeight="Bold" FontFamily="Times New Roman"/>
+            <RadioButton ClickMode="Press" Content="Family 1 Month" FontWeight="Bold" FontFamily="Times New Roman"/>
+            <RadioButton ClickMode="Press" Content="Family 12 Month" FontWeight="Bold" FontFamily="Times New Roman"/>
         </ListBox>
-        <Label x:Name="label_Copy" Content="Memembership Type" HorizontalAlignment="Left" Margin="54.4,80,0,0" VerticalAlignment="Top" Background="#FF696262" UseLayoutRounding="False" FontFamily="Times New Roman" FontSize="14" Foreground="#FFE8FA0B"/>
+        <Label x:Name="lblMembershipType" Content="Memembership Type" HorizontalAlignment="Left" Margin="65.528,84.9,0,0" VerticalAlignment="Top" Background="#FF696262" UseLayoutRounding="False" FontFamily="Times New Roman" FontSize="14" Foreground="#FFE8FA0B"/>
+        <Rectangle x:Name="recStartDate" Fill="#FFF6F1F1" HorizontalAlignment="Left" Height="46.628" Margin="264.99,102.258,0,0" Stroke="Black" VerticalAlignment="Top" Width="124.296" UseLayoutRounding="False"/>
+        <Label x:Name="lblStartDate" Content="Start Date" HorizontalAlignment="Left" Margin="293.961,83.4,0,0" VerticalAlignment="Top" Background="#FF696262" UseLayoutRounding="False" FontFamily="Times New Roman" FontSize="14" Foreground="#FFE8FA0B"/>
+        <DatePicker HorizontalAlignment="Left" Margin="278,114,0,0" VerticalAlignment="Top"/>
+        <Rectangle x:Name="recEndDate" Fill="#FFF6F1F1" HorizontalAlignment="Left" Height="53.477" Margin="264.99,161.372,0,0" Stroke="Black" VerticalAlignment="Top" Width="124.296" UseLayoutRounding="False"/>
+        <Label x:Name="lblEndDate" Content="End Date" HorizontalAlignment="Left" Margin="297.161,153.4,0,0" VerticalAlignment="Top" Background="#FF696262" UseLayoutRounding="False" FontFamily="Times New Roman" FontSize="14" Foreground="#FFE8FA0B"/>
+        <DatePicker HorizontalAlignment="Left" Margin="278,184,0,0" VerticalAlignment="Top"/>
+        <Rectangle x:Name="recCalculateAndClear" Fill="#FFF6F1F1" HorizontalAlignment="Left" Height="56.045" Margin="136.202,370.57,0,0" Stroke="Black" VerticalAlignment="Top" Width="140.63" UseLayoutRounding="False"/>
+        <Label x:Name="lblCalculateAndClear" Content="Calculate &amp; Clear" HorizontalAlignment="Left" Margin="153.6,350.4,0,0" VerticalAlignment="Top" Background="#FF696262" UseLayoutRounding="False" FontFamily="Times New Roman" FontSize="14" Foreground="#FFE8FA0B"/>
+        <Image x:Name="imgCalculate" HorizontalAlignment="Left" Height="38" Margin="145,383,0,0" VerticalAlignment="Top" Width="50" Source="Images/caculator.png"/>
+        <Image x:Name="imgClear" HorizontalAlignment="Left" Height="31" Margin="219,383,0,0" VerticalAlignment="Top" Width="45" Source="Images/reset.png" RenderTransformOrigin="0.338,0.371"/>
 
     </Grid>
 </Window>
