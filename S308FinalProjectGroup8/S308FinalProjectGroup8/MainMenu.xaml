@@ -5,10 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:S308FinalProjectGroup8"
         mc:Ignorable="d"
-        Title="Main Menu" Height="360.339" Width="769.365" WindowStartupLocation="CenterScreen">
+        Title="Main Menu" Height="369.139" Width="769.365" WindowStartupLocation="CenterScreen">
     <Grid Background="#FFFAF7F7" Margin="0,0,0,6.4">
         <Image x:Name="imgMainMenuBackground" HorizontalAlignment="Left" Height="273" Margin="378,65,-0.8,-14" VerticalAlignment="Top" Width="386" OpacityMask="Black" Source="Images/MainMenu_Background.jpg" Stretch="Fill"/>
-        <TextBox x:Name="txtMainMenuTitle" HorizontalAlignment="Left" Height="65" TextWrapping="Wrap" VerticalAlignment="Top" Width="769" Margin="-5,0,-0.8,0" SelectionOpacity="3" Opacity="0.75" FontFamily="Times New Roman" FontSize="20" IsReadOnly="True">
+        <TextBox x:Name="txtMainMenuTitle" HorizontalAlignment="Left" Height="65" TextWrapping="Wrap" VerticalAlignment="Top" Width="769" Margin="-5,0,-0.8,0" SelectionOpacity="3" Opacity="0.75" FontFamily="Times New Roman" FontSize="20">
             <TextBox.Background>
                 <RadialGradientBrush>
                     <GradientStop Color="Black" Offset="1"/>
@@ -16,18 +16,18 @@
                 </RadialGradientBrush>
             </TextBox.Background>
         </TextBox>
-        <TextBox x:Name="txtMembershipSales" HorizontalAlignment="Left" Height="70" TextWrapping="Wrap" VerticalAlignment="Top" Width="383" Margin="-5,65,0,0" Background="#FFF19393" IsReadOnly="True"/>
-        <TextBox x:Name="txtPricingManagement" HorizontalAlignment="Left" Height="65" TextWrapping="Wrap" VerticalAlignment="Top" Width="383" Margin="-5,135,0,0" Background="#FF9ABEFA" IsReadOnly="True"/>
-        <TextBox x:Name="txtMembershipInfo" HorizontalAlignment="Left" Height="65" TextWrapping="Wrap" VerticalAlignment="Top" Width="383" Margin="-5,200,0,0" Background="#FF76DD95" IsReadOnly="True"/>
-        <TextBox x:Name="txtExit" HorizontalAlignment="Left" Height="73" TextWrapping="Wrap" VerticalAlignment="Top" Width="383" Margin="-5,265,0,-14" Background="#FF727974" IsReadOnly="True"/>
+        <TextBox x:Name="txtMembershipSales" HorizontalAlignment="Left" Height="70" TextWrapping="Wrap" VerticalAlignment="Top" Width="383" Margin="-5,65,0,0" Background="#FFF19393" IsTabStop="False"/>
+        <TextBox x:Name="txtPricingManagement" HorizontalAlignment="Left" Height="65" TextWrapping="Wrap" VerticalAlignment="Top" Width="383" Margin="-5,135,0,0" Background="#FF9ABEFA" IsTabStop="False"/>
+        <TextBox x:Name="txtMembershipInfo" HorizontalAlignment="Left" Height="65" TextWrapping="Wrap" VerticalAlignment="Top" Width="383" Margin="-5,200,0,0" Background="#FF76DD95" IsTabStop="False"/>
+        <TextBox x:Name="txtExit" HorizontalAlignment="Left" Height="73" TextWrapping="Wrap" VerticalAlignment="Top" Width="383" Margin="-5,265,0,-14" Background="#FF727974" IsTabStop="False"/>
         <Label x:Name="lblMainMenuTitle" Content="Welcome! Fitness Club Manager" HorizontalAlignment="Left" Margin="193,10,0,0" VerticalAlignment="Top" Width="411" FontSize="30" FontWeight="Bold" FontFamily="Script MT Bold" IsHitTestVisible="False" Height="50" Foreground="#FF4C27C0" RenderTransformOrigin="1.003,0.473"/>
-        <Label x:Name="lblMembershipSales" Content="Membership Sales" HorizontalAlignment="Left" Margin="135,89,0,0" VerticalAlignment="Top" Width="163" FontSize="20" FontWeight="Bold" FontFamily="Script MT Bold" IsHitTestVisible="False" Height="30" Foreground="#FF1369D6" Background="#00000000" TabIndex="1"/>
-        <Image x:Name="imgSales" HorizontalAlignment="Left" Height="51" Margin="63,79,0,0" VerticalAlignment="Top" Width="50" Source="Images/sales.png" Cursor="Hand" MouseUp="imgSales_MouseUp" Tag="0"/>
-        <Image x:Name="imgPricing" HorizontalAlignment="Left" Height="51" Margin="63,140,0,0" VerticalAlignment="Top" Width="50" Source="Images/pricing.png" Tag="2"/>
-        <Label x:Name="lblPricingManagement" Content="Pricing Management" HorizontalAlignment="Left" Margin="135,151,0,0" VerticalAlignment="Top" Width="181" FontSize="20" FontWeight="Bold" FontFamily="Script MT Bold" IsHitTestVisible="False" Height="30" Foreground="#FF070708" Background="#00000000" TabIndex="3"/>
-        <Image x:Name="imgInfo" HorizontalAlignment="Left" Height="51" Margin="63,209,0,0" VerticalAlignment="Top" Width="50" Source="Images/membership.png" Tag="4"/>
-        <Label x:Name="lblMembershipInfo" Content="Member Information" HorizontalAlignment="Left" Margin="135,220,0,0" VerticalAlignment="Top" Width="219" FontSize="20" FontWeight="Bold" FontFamily="Script MT Bold" IsHitTestVisible="False" Height="30" Foreground="#FF945617" Background="#00000000" TabIndex="5"/>
-        <Label x:Name="lblExit" Content="Exit" HorizontalAlignment="Left" Margin="135,284,0,0" VerticalAlignment="Top" Width="219" FontSize="20" FontWeight="Bold" FontFamily="Script MT Bold" IsHitTestVisible="False" Height="30" Foreground="#FFD91025" Background="#00000000" Tag="7"/>
-        <Image x:Name="imgExit" HorizontalAlignment="Left" Height="51" Margin="63,270,0,0" VerticalAlignment="Top" Width="50" Source="Images/Exit.png" Tag="6"/>
+        <Label x:Name="lblMembershipSales" Content="Membership Sales" HorizontalAlignment="Left" Margin="135,89,0,0" VerticalAlignment="Top" Width="163" FontSize="20" FontWeight="Bold" FontFamily="Script MT Bold" IsHitTestVisible="True" Height="30" Foreground="#FF1369D6" Background="#00000000" TabIndex="0" Cursor="Hand" MouseUp="lblMembershipSales_MouseUp_1"/>
+        <Image x:Name="imgSales" HorizontalAlignment="Left" Height="51" Margin="63,79,0,0" VerticalAlignment="Top" Width="50" Source="Images/sales.png" Cursor="Hand" MouseUp="imgSales_MouseUp" Tag=""/>
+        <Image x:Name="imgPricing" HorizontalAlignment="Left" Height="51" Margin="63,140,0,0" VerticalAlignment="Top" Width="50" Source="Images/pricing.png" Tag="" Cursor="Hand" MouseUp="imgPricing_MouseUp"/>
+        <Label x:Name="lblPricingManagement" Content="Pricing Management" HorizontalAlignment="Left" Margin="135,151,0,0" VerticalAlignment="Top" Width="181" FontSize="20" FontWeight="Bold" FontFamily="Script MT Bold" IsHitTestVisible="True" Height="30" Foreground="#FF070708" Background="#00000000" TabIndex="1" Cursor="Hand" MouseUp="lblPricingManagement_MouseUp" IsTabStop="True"/>
+        <Image x:Name="imgInfo" HorizontalAlignment="Left" Height="51" Margin="63,209,0,0" VerticalAlignment="Top" Width="50" Source="Images/membership.png" Tag="4" Cursor="Hand" MouseUp="imgInfo_MouseUp"/>
+        <Label x:Name="lblMembershipInfo" Content="Member Information" HorizontalAlignment="Left" Margin="135,220,0,0" VerticalAlignment="Top" Width="219" FontSize="20" FontWeight="Bold" FontFamily="Script MT Bold" IsHitTestVisible="True" Height="30" Foreground="#FF945617" Background="#00000000" TabIndex="2" Cursor="Hand" MouseUp="lblMembershipInfo_MouseUp" IsTabStop="True"/>
+        <Label x:Name="lblExit" Content="Exit" HorizontalAlignment="Left" Margin="135,284,0,0" VerticalAlignment="Top" Width="219" FontSize="20" FontWeight="Bold" FontFamily="Script MT Bold" IsHitTestVisible="True" Height="30" Foreground="#FFD91025" Background="#00000000" Tag="3" Cursor="Hand" MouseUp="lblExit_MouseUp" IsTabStop="True"/>
+        <Image x:Name="imgExit" HorizontalAlignment="Left" Height="51" Margin="63,270,0,0" VerticalAlignment="Top" Width="50" Source="Images/Exit.png" Tag="6" Cursor="Hand" MouseUp="imgExit_MouseUp"/>
     </Grid>
 </Window>

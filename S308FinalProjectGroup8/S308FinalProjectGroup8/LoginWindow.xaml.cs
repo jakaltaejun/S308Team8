@@ -33,5 +33,11 @@ namespace S308FinalProjectGroup8
         {
 
         }
+
+        private void btxLogin_Click(object sender, RoutedEventArgs e)
+        {
+            Window1 MainMenu = new Window1();
+            MainMenu.Show();
+        }
     }
 }
