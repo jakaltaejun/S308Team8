@@ -16,8 +16,8 @@
             </TextBox.Background>
         </TextBox>
         <Label x:Name="lblPricingManagementTitle" Content="Pricing Management" HorizontalAlignment="Left" Margin="219,10,0,0" VerticalAlignment="Top" Width="267" FontSize="30" FontWeight="Bold" FontFamily="Script MT Bold" IsHitTestVisible="False" Height="50" Foreground="#FF4C27C0" RenderTransformOrigin="1.003,0.473"/>
-        <Image x:Name="image1" HorizontalAlignment="Left" Height="469" Margin="-5,65,0,0" VerticalAlignment="Top" Width="679" Source="Images/For All Background.png" Stretch="Fill"/>
-        <Rectangle HorizontalAlignment="Left" Height="371" Margin="23,80,0,0" Stroke="Black" VerticalAlignment="Top" Width="641">
+        <Image x:Name="imgBackground" HorizontalAlignment="Left" Height="469" Margin="-5,65,0,0" VerticalAlignment="Top" Width="679" Source="Images/For All Background.png" Stretch="Fill"/>
+        <Rectangle x:Name="recBackground" HorizontalAlignment="Left" Height="371" Margin="23,80,0,0" Stroke="Black" VerticalAlignment="Top" Width="641">
             <Rectangle.Fill>
                 <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
                     <GradientStop Color="Black"/>
