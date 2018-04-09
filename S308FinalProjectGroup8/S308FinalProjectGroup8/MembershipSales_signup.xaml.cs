@@ -1,4 +1,5 @@
-﻿using System;
+﻿//Background image from: https://magazine.nasm.org/american-fitness-magazine/issues/american-fitness-magazine-spring-2016/i-want-to-teach-group-fitness!
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +23,16 @@ namespace S308FinalProjectGroup8
         public MembershipSales_signup()
         {
             InitializeComponent();
+        }
+
+        private void imgHome_MouseUp(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+
+        private void imgExit_MouseUp(object sender, MouseButtonEventArgs e)
+        {
+
         }
     }
 }
