@@ -27,7 +27,7 @@
         </Rectangle>
         <Image x:Name="imgClose" HorizontalAlignment="Left" Height="49" Margin="511,451,0,0" VerticalAlignment="Top" Width="51" Source="Images/close_icon.png" Stretch="Fill" Cursor="Hand" MouseUp="imgClose_MouseUp"/>
         <Image x:Name="imgReturn" HorizontalAlignment="Left" Height="49" Margin="584,451,0,0" VerticalAlignment="Top" Width="41" Source="Images/home_icon.png" Cursor="Hand" MouseUp="imgReturn_MouseUp"/>
-        <TextBox x:Name="txtPricingResult" HorizontalAlignment="Left" Height="254.492" Margin="424.188,105.809,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="233" UseLayoutRounding="False" Background="#FFF7F3F3" VerticalScrollBarVisibility="Visible" IsTabStop="False"/>
+        <TextBox x:Name="txtPricingResult" HorizontalAlignment="Left" Height="254.492" Margin="424.188,105.809,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="233" UseLayoutRounding="False" Background="#FFF7F3F3" VerticalScrollBarVisibility="Visible" IsTabStop="False" IsReadOnly="True"/>
         <Rectangle x:Name="recMembershipType" Fill="#FFF6F1F1" HorizontalAlignment="Left" Height="254.701" Margin="43,105.6,0,0" Stroke="Black" VerticalAlignment="Top" Width="205.861" UseLayoutRounding="False"/>
         <Label x:Name="lblPricingResult" Content="Pricing Result" HorizontalAlignment="Left" Margin="501.386,88.235,0,0" VerticalAlignment="Top" Background="#FF696262" UseLayoutRounding="False" FontFamily="Times New Roman" FontSize="14" Foreground="#FFE8FA0B"/>
         <ListBox x:Name="lstMembershipType" HorizontalAlignment="Left" Height="127" Margin="65,118,0,0" VerticalAlignment="Top" Width="167">
