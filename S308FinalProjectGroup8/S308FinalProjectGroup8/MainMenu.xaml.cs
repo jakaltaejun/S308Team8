@@ -36,7 +36,7 @@ namespace S308FinalProjectGroup8
 
         private void lblMembershipSales_MouseUp_1(object sender, MouseButtonEventArgs e)
         {
-            MembershipSales Sales = new S308FinalProjectGroup8.MembershipSales();
+            MembershipSales Sales = new MembershipSales();
             Sales.Show();
         }
 
@@ -56,7 +56,7 @@ namespace S308FinalProjectGroup8
 
         private void lblMembershipInfo_MouseUp(object sender, MouseButtonEventArgs e)
         {
-            MemberInformation MembershipInfo = new S308FinalProjectGroup8.MemberInformation();
+            MemberInformation MembershipInfo = new MemberInformation();
             MembershipInfo.Show();
         }
 
@@ -64,6 +64,7 @@ namespace S308FinalProjectGroup8
 
         private void lblExit_MouseUp(object sender, MouseButtonEventArgs e)
         {
+            
 
         }
     }

@@ -29,15 +29,21 @@ namespace S308FinalProjectGroup8
             InitializeComponent();
         }
 
-        private void imgUserFace_MouseUp(object sender, MouseButtonEventArgs e)
-        {
-
-        }
+      
 
         private void btxLogin_Click(object sender, RoutedEventArgs e)
         {
-            Window1 MainMenu = new Window1();
-            MainMenu.Show();
+            if (txtUserID.Text == "FitnessManager" && pwdPassword.Password == "password")
+            {
+                Window1 MainMenu = new Window1();
+                MainMenu.Show();
+                MessageBox.Show("Welcome, you have been granted access");
+            }
+            else
+            {
+                MessageBox.Show("You are not allowed to access");
+            }
+
         }
     }
 }
