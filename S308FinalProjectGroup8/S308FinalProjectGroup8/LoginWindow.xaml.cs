@@ -38,6 +38,7 @@ namespace S308FinalProjectGroup8
                 Window1 MainMenu = new Window1();
                 MainMenu.Show();
                 MessageBox.Show("Welcome, you have been granted access");
+                this.Close();
             }
             else
             {

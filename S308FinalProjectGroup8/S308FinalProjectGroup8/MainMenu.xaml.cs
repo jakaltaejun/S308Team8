@@ -38,6 +38,7 @@ namespace S308FinalProjectGroup8
         {
             MembershipSales Sales = new MembershipSales();
             Sales.Show();
+            this.Close();
         }
 
         
@@ -46,26 +47,25 @@ namespace S308FinalProjectGroup8
         {
             Pricing_Management PricingManagement = new Pricing_Management();
             PricingManagement.Show();
+            this.Close();
             
         }
 
-        private void imgInfo_MouseUp(object sender, MouseButtonEventArgs e)
-        {
-
-        }
-
+      
         private void lblMembershipInfo_MouseUp(object sender, MouseButtonEventArgs e)
         {
             MemberInformation MembershipInfo = new MemberInformation();
             MembershipInfo.Show();
+            this.Close();
         }
 
         
 
         private void lblExit_MouseUp(object sender, MouseButtonEventArgs e)
         {
-            
 
+            this.Close();
+            }
         }
     }
-}
+
