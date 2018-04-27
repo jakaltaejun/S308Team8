@@ -27,12 +27,45 @@ namespace S308FinalProjectGroup8
 
         private void imgHome_MouseUp(object sender, MouseButtonEventArgs e)
         {
-
+            Window1 Home = new Window1();
+            Home.Show();
+            this.Close();
         }
 
         private void imgExit_MouseUp(object sender, MouseButtonEventArgs e)
         {
+            this.Close();
+        }
 
+        private void btnSubmit_Click(object sender, RoutedEventArgs e)
+        {
+            //Validate that all of the required fields are provided.
+            if(txtFirstName.Text =="" ||txtLastName .Text ==""||comCreditCardType .SelectedIndex ==-1||txtCreditCardNumber .Text ==""||
+                txtPhone .Text ==""||txtEmail .Text ==""||comGender .SelectedIndex ==-1)
+            {
+                MessageBox.Show("Please fill out all the required items.");
+                return;
+            }
+
+            //Validate that the phone number is entered in an acceptable format
+            double phone = 0;
+            if (txtPhone .Text .Length !=10)
+            {
+                MessageBox.Show("Please enter a 10-digit phone number.");
+                return;
+            }
+            else if(!double.TryParse (txtPhone.Text,out phone ))
+            {
+                MessageBox.Show("Please enter number in the item Phone");
+                return;
+            }
+        }
+
+        private void btnReturn_Click(object sender, RoutedEventArgs e)
+        {
+            MembershipSales Sales = new MembershipSales();
+            Sales.Show();
+            this.Close();
         }
     }
 }

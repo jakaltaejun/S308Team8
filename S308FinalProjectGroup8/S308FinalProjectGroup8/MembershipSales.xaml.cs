@@ -28,11 +28,31 @@ namespace S308FinalProjectGroup8
 
         private void imgHome_MouseUp(object sender, MouseButtonEventArgs e)
         {
-
+            Window1 Home = new Window1();
+            Home.Show();
+            this.Close();
         }
 
         private void imgExit_MouseUp(object sender, MouseButtonEventArgs e)
         {
+            this.Close();
+        }
+
+        private void btnQuote_Click(object sender, RoutedEventArgs e)
+        {
+            //Validate that a member type is selected
+            if(comMembershipType_Sales.SelectedIndex ==-1)
+            {
+                MessageBox.Show("Please select a membership type.");
+                return;
+            }
+
+            //Validate that the membership start date is not in the past
+            if(dateMembershipStartDate_Sales .SelectedDate <DateTime .Now )
+            {
+                MessageBox.Show("The membership start date shouldn't be in the past.");
+                return;
+            }
 
         }
     }

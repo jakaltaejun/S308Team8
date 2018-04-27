@@ -26,10 +26,24 @@ namespace S308FinalProjectGroup8
 
         private void imgHome_MouseUp(object sender, MouseButtonEventArgs e)
         {
-
+            Window1 Home = new Window1();
+            Home.Show();
+            this.Close();
         }
 
         private void imgClose_MouseUp(object sender, MouseButtonEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnCancel_Click(object sender, RoutedEventArgs e)
+        {
+            MembershipSales Sales = new MembershipSales();
+            Sales.Show();
+            this.Close();
+        }
+
+        private void btnConfirm_Click(object sender, RoutedEventArgs e)
         {
 
         }
