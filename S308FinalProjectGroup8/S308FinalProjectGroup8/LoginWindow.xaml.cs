@@ -30,7 +30,7 @@ namespace S308FinalProjectGroup8
         }
 
       
-
+        //Check if the user's input match the correct ID and password. If so, open the main menu.
         private void btxLogin_Click(object sender, RoutedEventArgs e)
         {
             if (txtUserID.Text == "FitnessManager" && pwdPassword.Password == "password")

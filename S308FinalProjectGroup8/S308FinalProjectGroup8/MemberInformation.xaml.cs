@@ -4,6 +4,9 @@
 //Images for Phone: https://icons8.com/icon/533/phone
 //Images for Search: https://icons8.com/icon/1888/google-web-search
 
+//Validate if at least one field was entered
+//Search if the input match any data in the list
+//If so, call the corresponding methods to output the stored member information and price preview. 
 
 using System;
 using System.Collections.Generic;

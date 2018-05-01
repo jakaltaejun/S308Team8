@@ -19,6 +19,7 @@ namespace S308FinalProjectGroup8
     /// </summary>
     public partial class MembershipSales_preview : Window
     {
+        //output the price preview
         public Member newMember;
         public MembershipSales_preview(Member _newMember)
         {

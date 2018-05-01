@@ -61,7 +61,8 @@ namespace S308FinalProjectGroup8
                 MessageBox.Show("The membership start date shouldn't be in the past.");
                 return;
             }
-
+            
+            //Go to next preview window with data.
             Member newMember = new Member(comMembershipType_Sales.SelectionBoxItem.ToString(), dateMembershipStartDate_Sales.SelectedDate.Value, chkPersonalTrainingPlan.IsChecked.Value, chkLockerRental.IsChecked.Value);
 
             MembershipSales_preview next = new MembershipSales_preview(newMember);

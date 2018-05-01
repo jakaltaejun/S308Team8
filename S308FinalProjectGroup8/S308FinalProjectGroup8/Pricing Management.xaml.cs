@@ -3,6 +3,9 @@
 //Images for Clear: https://www.iconfinder.com/icons/1575062/reset_icon
 //Images for home: https://www.iconfinder.com/icons/126572/home_house_icon
 //Images for close: https://www.iconfinder.com/icons/114937/button_close_icon
+
+//Write new data that user entered to the database.
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
