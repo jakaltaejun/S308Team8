@@ -62,6 +62,7 @@ namespace S308FinalProjectGroup8
             txtName.Text = "";
             txtEmail.Text = "";
             txtPhone.Text = "";
+            txtReport.Text = "";
         }
 
         private void imgClose_MouseUp(object sender, MouseButtonEventArgs e)

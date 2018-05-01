@@ -64,6 +64,87 @@ namespace S308FinalProjectGroup8
                 return;
             }
 
+            //Validate Age
+            int intAge = 0;
+            if(!int .TryParse(txtAge.Text,out intAge) )
+            {
+                MessageBox.Show("Please enter a number in the field Age");
+                return;
+            }
+
+            //Validate Weight
+            double dblWeight=0;
+            if(!double.TryParse (txtWeight .Text ,out dblWeight ))
+            {
+                MessageBox.Show("Please enter a number in the field Weight");
+                return;
+            }
+
+
+            //Validate Email
+            string strEmail = txtEmail.Text;
+            string strAt;
+            string strPeriod;
+            string strPeriod2;
+
+
+            int intFindAt = strEmail.IndexOf("@");
+            int intFindPeriod = strEmail.IndexOf(".");
+            strAt = strEmail.IndexOf("@").ToString();
+            strPeriod = strEmail.IndexOf(".").ToString();
+            strPeriod2 = strEmail.Substring(intFindPeriod + 1);
+
+            //Email Validation 1-2
+            if (strPeriod2.Length < 2)
+            {
+                MessageBox.Show("Enter at least two characters after the period");
+
+                return;
+
+            }
+            //Email Validation 1-3
+            if (strPeriod.Length < 1)
+            {
+                MessageBox.Show("Enter at least one character after the period");
+
+                return;
+            }
+            //Email Validation 1-4
+            if (!txtEmail.Text.Contains("@") || !txtEmail.Text.Contains("."))
+            {
+                MessageBox.Show("You should type @ and period");
+                ;
+                return;
+
+            }
+            //Email Validation 1-5
+            if (intFindPeriod - intFindAt < 1)
+            {
+                MessageBox.Show("there should be one character between @ and period");
+
+                return;
+            }
+
+            //Validate Card number digits <Visa 13 or 16 digits, Master 16 digits, Amercian Express 15 digits> 
+
+            if (comCreditCardType.SelectionBoxItem.ToString() == "Visa" && txtCreditCardNumber.Text.Length != 13 && txtCreditCardNumber.Text.Length != 16)
+            {
+                MessageBox.Show("VISA card numbers must be 13 or 16 digits");
+                return;
+            }
+
+            if (comCreditCardType.SelectionBoxItem.ToString() == "American Express" && txtCreditCardNumber.Text.Length != 15)
+            {
+                MessageBox.Show("AMEX card numbers must be 15 digits");
+                return;
+            }
+
+            if (comCreditCardType.SelectionBoxItem.ToString() == "Master Card" && txtCreditCardNumber.Text.Length != 16)
+            {
+                MessageBox.Show("Master card numbers must be 16 digits");
+                return;
+            }
+
             //Set Info
             newMember.FirstName = txtFirstName.Text;
             newMember.LastName = txtLastName.Text;

@@ -33,7 +33,7 @@
             </ComboBox.Background>
             <ComboBoxItem Content="Visa" HorizontalAlignment="Left" Width="217"/>
             <ComboBoxItem Content="Master Card" HorizontalAlignment="Left" Width="217"/>
-            <ComboBoxItem Content="American Expess" HorizontalAlignment="Left" Width="217"/>
+            <ComboBoxItem Content="American Express" HorizontalAlignment="Left" Width="217"/>
         </ComboBox>
         <Label x:Name="lblCreditCardNumber" Content="Credit Card Number*:" HorizontalAlignment="Left" Margin="60,301,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="22"/>
         <TextBox x:Name="txtCreditCardNumber" HorizontalAlignment="Left" Height="34" Margin="271,302,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="293" FontSize="22" FontFamily="Times New Roman"/>
