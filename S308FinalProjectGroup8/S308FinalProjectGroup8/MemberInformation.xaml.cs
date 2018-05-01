@@ -26,6 +26,7 @@ namespace S308FinalProjectGroup8
     /// </summary>
     public partial class MemberInformation : Window
     {
+        MemberDatabase db = new MemberDatabase();
         public MemberInformation()
         {
             InitializeComponent();
@@ -33,22 +34,43 @@ namespace S308FinalProjectGroup8
 
         private void imgSearch_MouseUp(object sender, MouseButtonEventArgs e)
         {
+            if (txtName.Text == "" && txtEmail.Text == "" && txtPhone.Text == "")
+            {
+                MessageBox.Show("At least one search field should be filled");
+                return;
+            }
 
+            var rets = db.Search(txtName.Text.Trim(), txtEmail.Text.Trim(), txtPhone.Text.Trim());
+
+            if (rets.Count <= 0)
+            {
+                MessageBox.Show("No records were found");
+                return;
+            }
+
+            foreach (var ret in rets)
+            {
+                txtReport.Text += ret.GetMembershipSummary() + "\n" + ret.GetPricePreview();
+            }
         }
 
         private void imgReset_MouseUp(object sender, MouseButtonEventArgs e)
         {
-
+            txtName.Text = "";
+            txtEmail.Text = "";
+            txtPhone.Text = "";
         }
 
         private void imgClose_MouseUp(object sender, MouseButtonEventArgs e)
         {
-
+            this.Close();
         }
 
         private void imgHome_MouseUp(object sender, MouseButtonEventArgs e)
         {
-
+            Window1 Home = new Window1();
+            Home.Show();
+            this.Close();
         }
     }
 }

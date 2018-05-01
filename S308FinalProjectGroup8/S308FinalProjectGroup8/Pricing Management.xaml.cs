@@ -16,6 +16,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.IO;
 
 namespace S308FinalProjectGroup8
 {
@@ -24,29 +25,78 @@ namespace S308FinalProjectGroup8
     /// </summary>
     public partial class Pricing_Management : Window
     {
+        PriceInfo price = new PriceInfo();
+        int indexInPrice;
         public Pricing_Management()
         {
             InitializeComponent();
+            txtLockerRental.Text = File.ReadAllText(@"..\..\Data\LockerRental.txt");
+            txtPersonalTrainingPlan.Text = File.ReadAllText(@"..\..\Data\PersonalTrainingPlan.txt");
         }
 
-        private void imgClear_MouseUp(object sender, MouseButtonEventArgs e)
-        {
+      
 
-        }
-
-        private void imgCalculate_MouseUp(object sender, MouseButtonEventArgs e)
-        {
-
-        }
+       
 
         private void imgReturn_MouseUp(object sender, MouseButtonEventArgs e)
         {
-
+            Window1 Home = new Window1();
+            Home.Show();
+            this.Close();
         }
 
         private void imgClose_MouseUp(object sender, MouseButtonEventArgs e)
         {
+            this.Close();
+        }
 
+        private void comAvailable_DropDownClosed(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comMembershipType_DropDownClosed(object sender, EventArgs e)
+        {
+            indexInPrice = price.SearchForMembershipType(comMembershipType.SelectionBoxItem.ToString());
+            if (indexInPrice != -1)
+            {
+                txtPrice.Text = price.PriceSet[indexInPrice].UnitPrice.ToString();
+                if (price.PriceSet[indexInPrice].Available)
+                {
+                    comAvailable.SelectedIndex = 0;
+                }
+                else
+                {
+                    comAvailable.SelectedIndex = 1;
+                }
+            }
+        }
+        private void btnChange_Click(object sender, RoutedEventArgs e)
+        {
+            var ret = MessageBox.Show("Are you sure to change price?", "Confirm", MessageBoxButton.YesNo);
+            if (ret == MessageBoxResult.Yes)
+            {
+                if (txtPrice.Text != "" && comAvailable.SelectedIndex != -1)
+                {
+                    price.PriceSet[indexInPrice].UnitPrice = Convert.ToDouble(txtPrice.Text);
+                    if (comAvailable.SelectionBoxItem.ToString() == "unavailable")
+                    {
+                        price.PriceSet[indexInPrice].Available = false;
+                    }
+                    else
+                    {
+                        price.PriceSet[indexInPrice].Available = true;
+                    }
+                }
+                price.Store();
+                File.WriteAllText(@"..\..\Data\LockerRental.txt", txtLockerRental.Text);
+                File.WriteAllText(@"..\..\Data\PersonalTrainingPlan.txt", txtPersonalTrainingPlan.Text);
+                MessageBox.Show("Success");
+
+                Window1 Home = new Window1();
+                Home.Show();
+                this.Close();
+            }
         }
     }
 }

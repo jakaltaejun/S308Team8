@@ -73,5 +73,6 @@
         <Button x:Name="btnReturn" Content="New Purchase" HorizontalAlignment="Left" Margin="531,643,0,0" VerticalAlignment="Top" Width="142" Background="#FFA0BAF9" FontFamily="Times New Roman" FontSize="22" Height="33" Click="btnReturn_Click"/>
         <Image x:Name="imgHome" HorizontalAlignment="Left" Height="50" Margin="608,712,0,0" VerticalAlignment="Top" Width="50" Source="Images/home_icon.png" Cursor="Hand" MouseUp="imgHome_MouseUp"/>
         <Image x:Name="imgExit" HorizontalAlignment="Left" Height="66" Margin="680,706,0,0" VerticalAlignment="Top" Width="66" Source="Images/close_icon.png" Cursor="Hand" MouseUp="imgExit_MouseUp"/>
+        <Button x:Name="btnSearch" Content="Search" HorizontalAlignment="Left" Margin="608,198,0,0" VerticalAlignment="Top" Width="104" Height="34" Click="btnSearch_Click"/>
     </Grid>
 </Window>

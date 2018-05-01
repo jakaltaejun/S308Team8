@@ -15,13 +15,16 @@ using System.Windows.Shapes;
 namespace S308FinalProjectGroup8
 {
     /// <summary>
-    /// MembershipSales_preview.xaml 的交互逻辑
+    /// MembershipSales_preview.xaml 
     /// </summary>
     public partial class MembershipSales_preview : Window
     {
-        public MembershipSales_preview()
+        public Member newMember;
+        public MembershipSales_preview(Member _newMember)
         {
             InitializeComponent();
+            newMember = _newMember;
+            txtQuotePreview.Text = newMember.GetPricePreview();
         }
 
         private void imgHome_MouseUp(object sender, MouseButtonEventArgs e)
@@ -45,7 +48,10 @@ namespace S308FinalProjectGroup8
 
         private void btnConfirm_Click(object sender, RoutedEventArgs e)
         {
-
+            MembershipSales_signup next = new MembershipSales_signup(newMember);
+            next.Show();
+            this.Close();
         }
+
     }
 }
