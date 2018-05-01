@@ -53,7 +53,7 @@
             <ComboBoxItem Content="available" HorizontalAlignment="Left" Width="217"/>
             <ComboBoxItem Content="unavailable" HorizontalAlignment="Left" Width="217"/>
         </ComboBox>
-        <Label x:Name="lblPersonalTrainingPlan" Content="Personal Training Plan:" HorizontalAlignment="Left" Margin="388,145,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblPersonalTrainingPlan" Content="Personal Training Plan:" HorizontalAlignment="Left" Margin="384,145,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtPersonalTrainingPlan" HorizontalAlignment="Left" Height="22" Margin="521,145,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="122"/>
         <Label x:Name="lblLockerRental" Content="Locker Rental:" HorizontalAlignment="Left" Margin="388,208,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtLockerRental" HorizontalAlignment="Left" Height="22" Margin="521,208,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="122"/>

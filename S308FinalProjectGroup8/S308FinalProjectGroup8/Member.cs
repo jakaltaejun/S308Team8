@@ -39,13 +39,19 @@ namespace S308FinalProjectGroup8
 
         public double MembershipCostPerMonth { get; set; }
 
+        public string strMembershipCostPerMonth { get; set; }
+
         public double Subtotal { get; set; }
+
+        public string strSubtotal { get; set; }
 
         public bool PersonalTrainingPlan { get; set; }
 
         public bool LockerRental { get; set; }
 
         public double Total { get; set; }
+
+        public string strTotal { get; set; }
 
         public Member()
         {
@@ -78,20 +84,25 @@ namespace S308FinalProjectGroup8
                 if (MembershipType == elements[0])
                 {
                     Subtotal = Convert.ToDouble(elements[1]);
+                    strSubtotal = Subtotal.ToString("C2");
                     break;
                 }
             }
 
             Total = Subtotal;
+            strTotal = Total.ToString("C2");
 
             ////Calculate cost per month
             if (MembershipType.IndexOf(" 1 ") >= 0)
             {
                 MembershipCostPerMonth = Subtotal;
+
+                strMembershipCostPerMonth = MembershipCostPerMonth.ToString("C2");
             }
             else
             {
-                MembershipCostPerMonth = Subtotal / 12;
+                MembershipCostPerMonth = Math.Round(Subtotal / 12,2);
+                strMembershipCostPerMonth = MembershipCostPerMonth.ToString("C2");
             }
 
             //If personal training plan selected, charge 5/mon
@@ -99,13 +110,16 @@ namespace S308FinalProjectGroup8
             {
                 double PersonalTrainingPlan = Convert.ToDouble(File.ReadAllText(@"..\..\Data\PersonalTrainingPlan.txt"));
                 MembershipCostPerMonth += 5;
+                strMembershipCostPerMonth = MembershipCostPerMonth.ToString("C2");
                 if (MembershipType.IndexOf(" 1 ") >= 0)
                 {
                     Total += PersonalTrainingPlan;
+                    strTotal = Total.ToString("C2");
                 }
                 else
                 {
                     Total += PersonalTrainingPlan * 12;
+                    strTotal = Total.ToString("C2");
                 }
             }
 
@@ -114,20 +128,23 @@ namespace S308FinalProjectGroup8
             {
                 double LockerRental = Convert.ToDouble(File.ReadAllText(@"..\..\Data\LockerRental.txt"));
                 MembershipCostPerMonth += 1;
+                strMembershipCostPerMonth = MembershipCostPerMonth.ToString("C2");
                 if (MembershipType.IndexOf(" 1 ") >= 0)
                 {
                     Total += LockerRental;
+                    strTotal = Total.ToString("C2");
                 }
                 else
                 {
                     Total += LockerRental * 12;
+                    strTotal = Total.ToString("C2");
                 }
             }
         }
 
         public string GetPricePreview()
         {
-            return "Membership Type: " + MembershipType + "\nStart Date: " + StartDate + "\nEnd Date: " + EndDate + "\nMembership Cost per Month: " + MembershipCostPerMonth + "\nSubtotal: " + Subtotal + "\nPersonal Training Plan: " + PersonalTrainingPlan + "\nLocker Rental: " + LockerRental + "\nTotal(no tax included): " + Total;
+            return "Membership Type: " + MembershipType + "\nStart Date: " + StartDate + "\nEnd Date: " + EndDate + "\nMembership Cost per Month: " + strMembershipCostPerMonth  + "\nSubtotal: " + strSubtotal  + "\nPersonal Training Plan: " + PersonalTrainingPlan + "\nLocker Rental: " + LockerRental + "\nTotal(no tax included): " + strTotal;
         }
 
         public string GetMembershipSummary()

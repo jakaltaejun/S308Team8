@@ -101,6 +101,7 @@ namespace S308FinalProjectGroup8
             this.Close();
         }
 
+        //If we entered Last Name, Email, and phone number of an existing customer, then click search. We'll get all other information prefilled
         private void btnSearch_Click(object sender, RoutedEventArgs e)
         {
             if (txtLastName.Text != "" && txtPhone.Text != "" && txtEmail.Text != "")
