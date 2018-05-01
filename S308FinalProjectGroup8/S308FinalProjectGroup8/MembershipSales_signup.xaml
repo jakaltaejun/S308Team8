@@ -18,7 +18,7 @@
         </TextBox>
         <Label x:Name="lblMembershipSalesTitle" Content="Membership Sales" HorizontalAlignment="Left" Margin="273,10,0,0" VerticalAlignment="Top" Width="240" FontSize="30" FontWeight="Bold" FontFamily="Script MT Bold" IsHitTestVisible="False" Height="50" Foreground="#FF4C27C0" RenderTransformOrigin="1.003,0.473"/>
         <Rectangle x:Name="recMembershipSales" Fill="#FFFAFFF6" HorizontalAlignment="Left" Height="614" Margin="45,86,0,0" Stroke="Black" VerticalAlignment="Top" Width="701" Opacity="0.8"/>
-        <Label x:Name="lblDescription" Content="Please enter the information below (the items with * is required)" HorizontalAlignment="Left" Margin="60,107,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Label x:Name="lblDescription" Content="Please enter the information below (the items with * is required)" HorizontalAlignment="Left" Margin="60,92,0,0" VerticalAlignment="Top" FontSize="18"/>
         <Label x:Name="lblFirstName" Content="First Name*:" HorizontalAlignment="Left" Margin="60,151,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="22"/>
         <TextBox x:Name="txtFirstName" HorizontalAlignment="Left" Height="34" Margin="271,152,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="293" FontSize="22" FontFamily="Times New Roman"/>
         <Label x:Name="lblLastName" Content="Last Name*:" HorizontalAlignment="Left" Margin="60,197,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="22"/>
@@ -74,5 +74,6 @@
         <Image x:Name="imgHome" HorizontalAlignment="Left" Height="50" Margin="608,712,0,0" VerticalAlignment="Top" Width="50" Source="Images/home_icon.png" Cursor="Hand" MouseUp="imgHome_MouseUp"/>
         <Image x:Name="imgExit" HorizontalAlignment="Left" Height="66" Margin="680,706,0,0" VerticalAlignment="Top" Width="66" Source="Images/close_icon.png" Cursor="Hand" MouseUp="imgExit_MouseUp"/>
         <Button x:Name="btnSearch" Content="Search" HorizontalAlignment="Left" Margin="608,198,0,0" VerticalAlignment="Top" Width="104" Height="34" Click="btnSearch_Click"/>
+        <Label x:Name="lblInstructions" Content="(Enter Last Name, Phone and Email then click search to get other existing information prefilled)" HorizontalAlignment="Left" Margin="58,122,0,0" VerticalAlignment="Top" FontSize="14"/>
     </Grid>
 </Window>
