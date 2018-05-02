@@ -9,6 +9,7 @@ namespace S308FinalProjectGroup8
 {
     public class Price
     {
+        //Properties
         public string MembershipType { get; set; }
         public double UnitPrice { get; set; }
         public bool Available { get; set; }
@@ -20,6 +21,7 @@ namespace S308FinalProjectGroup8
 
         public PriceInfo()
         {
+            //Convert PriceSet to Double and read all price.csv file
             var lines = File.ReadAllLines(@"..\..\Data\price.csv");
             int i = 0;
             foreach (var line in lines)
@@ -35,6 +37,7 @@ namespace S308FinalProjectGroup8
 
         public void Store()
         {
+            //Price will be calculated based on stored Price.csv the file
             string strOut = string.Empty;
             for (int i = 0; i < 6; ++i)
             {
@@ -42,7 +45,7 @@ namespace S308FinalProjectGroup8
             }
             File.WriteAllText(@"..\..\Data\price.csv", strOut);
         }
-
+        //Serach Membership Information with for loop function
         public int SearchForMembershipType(string type)
         {
             for (int i = 0; i < 6; ++i)

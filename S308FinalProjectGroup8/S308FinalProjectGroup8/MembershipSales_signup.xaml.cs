@@ -25,17 +25,18 @@ namespace S308FinalProjectGroup8
 
         public MembershipSales_signup(Member _newMember)
         {
+            //assign variables
             InitializeComponent();
             newMember = _newMember;
         }
-
+        //The user can go back to Main Menu
         private void imgHome_MouseUp(object sender, MouseButtonEventArgs e)
         {
             Window1 Home = new Window1();
             Home.Show();
             this.Close();
         }
-
+        //The user can close the interface
         private void imgExit_MouseUp(object sender, MouseButtonEventArgs e)
         {
             this.Close();

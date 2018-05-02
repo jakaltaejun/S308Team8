@@ -16,6 +16,7 @@
         <PasswordBox x:Name="pwdPassword" HorizontalAlignment="Left" Margin="104,334,0,0" VerticalAlignment="Top" Width="169" Height="32" Background="#FFF1EEEE" TabIndex="1"/>
         <Image x:Name="image_Copy" HorizontalAlignment="Left" Height="27" Margin="71,339,0,0" VerticalAlignment="Top" Width="20" Source="Images/Locker.png" RenderTransformOrigin="-0.013,0.459"/>
         <Label x:Name="lblTitle" Content="     Fitness&#xD;&#xA;Membership" HorizontalAlignment="Left" Margin="89,42,0,0" VerticalAlignment="Top" Height="102" Width="210" FontFamily="Script MT Bold" FontSize="36"/>
+        <Label x:Name="lblUserInfo" Content="ID: FitnessManager Password: password" HorizontalAlignment="Left" Margin="71,253,0,0" VerticalAlignment="Top" Height="26" Width="228"/>
 
     </Grid>
 </Window>

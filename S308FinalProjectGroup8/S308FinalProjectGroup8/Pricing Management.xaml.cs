@@ -28,10 +28,12 @@ namespace S308FinalProjectGroup8
     /// </summary>
     public partial class Pricing_Management : Window
     {
+        //Assign a list of price information
         PriceInfo price = new PriceInfo();
         int indexInPrice;
         public Pricing_Management()
         {
+            //read all text about locker rental and personal traninig plan from the text file
             InitializeComponent();
             txtLockerRental.Text = File.ReadAllText(@"..\..\Data\LockerRental.txt");
             txtPersonalTrainingPlan.Text = File.ReadAllText(@"..\..\Data\PersonalTrainingPlan.txt");
@@ -40,24 +42,24 @@ namespace S308FinalProjectGroup8
       
 
        
-
+        //The user can go back to Main Menu
         private void imgReturn_MouseUp(object sender, MouseButtonEventArgs e)
         {
             Window1 Home = new Window1();
             Home.Show();
             this.Close();
         }
-
+        //The user can close the interface
         private void imgClose_MouseUp(object sender, MouseButtonEventArgs e)
         {
             this.Close();
         }
-
+        //not be used 
         private void comAvailable_DropDownClosed(object sender, EventArgs e)
         {
 
         }
-
+        //Calculated the price based on membership type
         private void comMembershipType_DropDownClosed(object sender, EventArgs e)
         {
             indexInPrice = price.SearchForMembershipType(comMembershipType.SelectionBoxItem.ToString());
@@ -74,6 +76,7 @@ namespace S308FinalProjectGroup8
                 }
             }
         }
+        //change price with if statement function
         private void btnChange_Click(object sender, RoutedEventArgs e)
         {
             var ret = MessageBox.Show("Are you sure to change price?", "Confirm", MessageBoxButton.YesNo);
@@ -91,6 +94,7 @@ namespace S308FinalProjectGroup8
                         price.PriceSet[indexInPrice].Available = true;
                     }
                 }
+                //Price data will be stored in the text file
                 price.Store();
                 File.WriteAllText(@"..\..\Data\LockerRental.txt", txtLockerRental.Text);
                 File.WriteAllText(@"..\..\Data\PersonalTrainingPlan.txt", txtPersonalTrainingPlan.Text);

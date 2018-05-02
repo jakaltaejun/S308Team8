@@ -1,4 +1,5 @@
-﻿////Name: Taejun Lee, Jaehyun Lim, Jiakuo Li
+﻿////S308 FINAL PROJECT
+////Name: Taejun Lee, Jaehyun Lim, Jiakuo Li
 ///Imgaes for dumbbell: https://www.iconfinder.com/icons/282211/dumbbell_exercise_fitness_gym_sport_sport_club_training_icon#size=128
 ///Images for background: https://www.mensfitness.com/training/workout-routines/best-workout-ever-according-science
 ///Images for sales: https://www.iconfinder.com/icons/755051/business_earning_income_increase_office_sales_icon
@@ -35,7 +36,7 @@ namespace S308FinalProjectGroup8
         
 
         
-
+        //The user allows go to MembershipSales by clicking and main menu will be closed
         private void lblMembershipSales_MouseUp_1(object sender, MouseButtonEventArgs e)
         {
             MembershipSales Sales = new MembershipSales();
@@ -44,7 +45,7 @@ namespace S308FinalProjectGroup8
         }
 
         
-
+        //The user allows go to PricingManagement by clicking and main menu will be closed
         private void lblPricingManagement_MouseUp(object sender, MouseButtonEventArgs e)
         {
             Pricing_Management PricingManagement = new Pricing_Management();
@@ -53,7 +54,7 @@ namespace S308FinalProjectGroup8
             
         }
 
-      
+      // The user allows go to MembershipInformation by clicking and main menu will be closed
         private void lblMembershipInfo_MouseUp(object sender, MouseButtonEventArgs e)
         {
             MemberInformation MembershipInfo = new MemberInformation();
@@ -62,7 +63,7 @@ namespace S308FinalProjectGroup8
         }
 
         
-
+        //The user allows to exit the main menu by clicking 
         private void lblExit_MouseUp(object sender, MouseButtonEventArgs e)
         {
 

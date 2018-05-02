@@ -28,9 +28,9 @@
         </TextBox>
         <Label x:Name="lblMembershipSalesTitle" Content="Membership Sales" HorizontalAlignment="Left" Margin="273,10,0,0" VerticalAlignment="Top" Width="240" FontSize="30" FontWeight="Bold" FontFamily="Script MT Bold" IsHitTestVisible="False" Height="50" Foreground="#FF4C27C0" RenderTransformOrigin="1.003,0.473"/>
         <Label x:Name="lblQuotePreview" Content="Quote Preview:" HorizontalAlignment="Left" Margin="69.046,98.981,0,0" VerticalAlignment="Top" Background="#FF696262" UseLayoutRounding="False" FontFamily="Times New Roman" FontSize="22" Foreground="#FFE8FA0B"/>
-        <TextBox x:Name="txtQuotePreview" HorizontalAlignment="Left" Height="254" Margin="86,154,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="623" FontSize="22" FontFamily="Courier New" IsReadOnly="True"/>
-        <Button x:Name="btnConfirm" Content="Confirm" HorizontalAlignment="Left" Margin="504,423,0,0" VerticalAlignment="Top" Width="85" FontFamily="Times New Roman" FontSize="20" Height="34" Click="btnConfirm_Click"/>
-        <Button x:Name="btnCancel" Content="Cancel" HorizontalAlignment="Left" Margin="618,423,0,0" VerticalAlignment="Top" Width="85" FontFamily="Times New Roman" FontSize="20" Height="34" Click="btnCancel_Click"/>
+        <TextBox x:Name="txtQuotePreview" HorizontalAlignment="Left" Height="254" Margin="86,154,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="623" FontSize="22" FontFamily="Courier New" IsReadOnly="True" IsTabStop="False"/>
+        <Button x:Name="btnConfirm" Content="Confirm" HorizontalAlignment="Left" Margin="504,423,0,0" VerticalAlignment="Top" Width="85" FontFamily="Times New Roman" FontSize="20" Height="34" Click="btnConfirm_Click" IsTabStop="False"/>
+        <Button x:Name="btnCancel" Content="Cancel" HorizontalAlignment="Left" Margin="618,423,0,0" VerticalAlignment="Top" Width="85" FontFamily="Times New Roman" FontSize="20" Height="34" Click="btnCancel_Click" IsTabStop="False"/>
 
     </Grid>
 </Window>

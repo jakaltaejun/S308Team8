@@ -9,6 +9,7 @@ namespace S308FinalProjectGroup8
 {
     public class Member
     {
+        //Properties
         public string FirstName { get; set; }
 
         public string LastName { get; set; }
@@ -141,7 +142,7 @@ namespace S308FinalProjectGroup8
                 }
             }
         }
-
+        //Methods
         public string GetPricePreview()
         {
             return "Membership Type: " + MembershipType + "\nStart Date: " + StartDate + "\nEnd Date: " + EndDate + "\nMembership Cost per Month: " + strMembershipCostPerMonth  + "\nSubtotal: " + strSubtotal  + "\nPersonal Training Plan: " + PersonalTrainingPlan + "\nLocker Rental: " + LockerRental + "\nTotal(no tax included): " + strTotal;

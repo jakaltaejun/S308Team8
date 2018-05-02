@@ -34,7 +34,7 @@
         <Label x:Name="lblType" Content="Membership Type:" HorizontalAlignment="Left" Margin="54,145,0,0" VerticalAlignment="Top"/>
         <Label x:Name="lblNewPrice" Content="New Price:" HorizontalAlignment="Left" Margin="54,211,0,0" VerticalAlignment="Top"/>
         <Label x:Name="lblAvailability" Content="Availability:" HorizontalAlignment="Left" Margin="54,273,0,0" VerticalAlignment="Top"/>
-        <ComboBox x:Name="comMembershipType" HorizontalAlignment="Left" Margin="190,150,0,0" VerticalAlignment="Top" Width="162" Height="21" FontFamily="Times New Roman" DropDownClosed="comMembershipType_DropDownClosed">
+        <ComboBox x:Name="comMembershipType" HorizontalAlignment="Left" Margin="190,150,0,0" VerticalAlignment="Top" Width="162" Height="21" FontFamily="Times New Roman" DropDownClosed="comMembershipType_DropDownClosed" TabIndex="0">
             <ComboBox.Background>
                 <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
                     <GradientStop Color="#FFF0F0F0" Offset="0"/>
@@ -48,16 +48,16 @@
             <ComboBoxItem Content="Family 1 Month" HorizontalAlignment="Left" Width="217"/>
             <ComboBoxItem Content="Family 12 Month" HorizontalAlignment="Left" Width="217"/>
         </ComboBox>
-        <TextBox x:Name="txtPrice" HorizontalAlignment="Left" Height="23" Margin="190,211,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="162"/>
-        <ComboBox x:Name="comAvailable" HorizontalAlignment="Left" Margin="190,276,0,0" VerticalAlignment="Top" Width="162" RenderTransformOrigin="0.598,0.625" DropDownClosed="comAvailable_DropDownClosed">
+        <TextBox x:Name="txtPrice" HorizontalAlignment="Left" Height="23" Margin="190,211,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="162" TabIndex="2"/>
+        <ComboBox x:Name="comAvailable" HorizontalAlignment="Left" Margin="190,276,0,0" VerticalAlignment="Top" Width="162" RenderTransformOrigin="0.598,0.625" DropDownClosed="comAvailable_DropDownClosed" TabIndex="4">
             <ComboBoxItem Content="available" HorizontalAlignment="Left" Width="217"/>
             <ComboBoxItem Content="unavailable" HorizontalAlignment="Left" Width="217"/>
         </ComboBox>
         <Label x:Name="lblPersonalTrainingPlan" Content="Personal Training Plan:" HorizontalAlignment="Left" Margin="384,145,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtPersonalTrainingPlan" HorizontalAlignment="Left" Height="22" Margin="521,145,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="122"/>
+        <TextBox x:Name="txtPersonalTrainingPlan" HorizontalAlignment="Left" Height="22" Margin="521,145,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="122" TabIndex="1"/>
         <Label x:Name="lblLockerRental" Content="Locker Rental:" HorizontalAlignment="Left" Margin="388,208,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtLockerRental" HorizontalAlignment="Left" Height="22" Margin="521,208,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="122"/>
-        <Button x:Name="btnChange" Content="Confirm Setting" HorizontalAlignment="Left" Margin="521,297,0,0" VerticalAlignment="Top" Width="121" Click="btnChange_Click" Height="45"/>
+        <TextBox x:Name="txtLockerRental" HorizontalAlignment="Left" Height="22" Margin="521,208,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="122" TabIndex="3"/>
+        <Button x:Name="btnChange" Content="Confirm Setting" HorizontalAlignment="Left" Margin="521,297,0,0" VerticalAlignment="Top" Width="121" Click="btnChange_Click" Height="45" TabIndex="5"/>
 
     </Grid>
 </Window>

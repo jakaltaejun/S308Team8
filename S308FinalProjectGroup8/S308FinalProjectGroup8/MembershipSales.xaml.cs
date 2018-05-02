@@ -24,6 +24,7 @@ namespace S308FinalProjectGroup8
         PriceInfo price = new PriceInfo();
         public MembershipSales()
         {
+            //Use for loop to figure out price depending on selected the date
             InitializeComponent();
             for (int i = 0; i < 6; ++i)
             {
@@ -33,14 +34,14 @@ namespace S308FinalProjectGroup8
                 }
             }
         }
-
+        //The user can go back Main Menu
         private void imgHome_MouseUp(object sender, MouseButtonEventArgs e)
         {
             Window1 Home = new Window1();
             Home.Show();
             this.Close();
         }
-
+        //The user can close interface
         private void imgExit_MouseUp(object sender, MouseButtonEventArgs e)
         {
             this.Close();

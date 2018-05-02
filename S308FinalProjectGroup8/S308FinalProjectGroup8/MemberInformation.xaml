@@ -42,6 +42,7 @@
         <Image x:Name="imgPhone" HorizontalAlignment="Left" Height="26" Margin="44,239,0,0" VerticalAlignment="Top" Width="40" Source="Images/phone.png"/>
         <Image x:Name="imgSearch" HorizontalAlignment="Left" Height="35" Margin="107,285,0,0" VerticalAlignment="Top" Width="69" Source="Images/search icon.png" Cursor="Hand" MouseUp="imgSearch_MouseUp"/>
         <Image x:Name="imgReset" HorizontalAlignment="Left" Height="35" Margin="165,285,0,0" VerticalAlignment="Top" Width="69" Source="Images/reset.png" Cursor="Hand" MouseUp="imgReset_MouseUp"/>
+        <Label x:Name="lblLastname" Content="(Input Last Name)" HorizontalAlignment="Left" Margin="29,127,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

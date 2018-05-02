@@ -23,18 +23,19 @@ namespace S308FinalProjectGroup8
         public Member newMember;
         public MembershipSales_preview(Member _newMember)
         {
+            //Assign variables
             InitializeComponent();
             newMember = _newMember;
             txtQuotePreview.Text = newMember.GetPricePreview();
         }
-
+        //The user can go back to Main Menu
         private void imgHome_MouseUp(object sender, MouseButtonEventArgs e)
         {
             Window1 Home = new Window1();
             Home.Show();
             this.Close();
         }
-
+        //The user can close the interface
         private void imgClose_MouseUp(object sender, MouseButtonEventArgs e)
         {
             this.Close();
@@ -46,7 +47,7 @@ namespace S308FinalProjectGroup8
             Sales.Show();
             this.Close();
         }
-
+        //The quote will be shown before forwarding to signup
         private void btnConfirm_Click(object sender, RoutedEventArgs e)
         {
             MembershipSales_signup next = new MembershipSales_signup(newMember);

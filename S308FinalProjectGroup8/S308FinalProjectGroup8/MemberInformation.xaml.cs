@@ -34,7 +34,7 @@ namespace S308FinalProjectGroup8
         {
             InitializeComponent();
         }
-
+        //search members by using if statement
         private void imgSearch_MouseUp(object sender, MouseButtonEventArgs e)
         {
             if (txtName.Text == "" && txtEmail.Text == "" && txtPhone.Text == "")
@@ -56,7 +56,7 @@ namespace S308FinalProjectGroup8
                 txtReport.Text += ret.GetMembershipSummary() + "\n" + ret.GetPricePreview();
             }
         }
-
+        //Reset all inputs
         private void imgReset_MouseUp(object sender, MouseButtonEventArgs e)
         {
             txtName.Text = "";
@@ -64,12 +64,12 @@ namespace S308FinalProjectGroup8
             txtPhone.Text = "";
             txtReport.Text = "";
         }
-
+        //MmebershipInformation is closed by clicking 
         private void imgClose_MouseUp(object sender, MouseButtonEventArgs e)
         {
             this.Close();
         }
-
+        //The user can go back to Main Menu
         private void imgHome_MouseUp(object sender, MouseButtonEventArgs e)
         {
             Window1 Home = new Window1();
